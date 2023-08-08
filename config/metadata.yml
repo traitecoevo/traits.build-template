@@ -1,0 +1,60 @@
+metadata:
+  title: '**Trait database for...'
+  description: "**This database ..."
+  doi: unknown
+  structure_URI: https://github.com/traitecoevo/traits.build
+  geo_location:
+    geo_location_place: unknown
+    geodetic_datum: EPSG:4326
+  language: en
+  related_identifiers:
+  - related_identifier_type: url 
+    identifier: https://github.com/traitecoevo/traits.build
+    relation_type: isCompiledBy
+    resource_type: dataset
+  - related_identifier_type: doi
+    identifier: .na
+    relation_type: isCitedBy
+    resource_type: publication-article  
+  - related_identifier_type: doi
+    identifier: .na
+    relation_type: isVersionOf
+    resource_type: dataset
+  references: "**publication associated with dataset"
+  publisher: unknown
+  publication_year: unknown
+  publication_date: unknown
+  license:
+    rights: CC-BY-4.0    
+    rights_holder: unknown
+    rights_URI: https://creativecommons.org/licenses/by/4.0/
+    description: Under this license, the material can be copied and redistributed in any medium or format. It can be remixed, transformed, and built upon for any purpose, even commercially. Re-users must give appropriate credit, provide a link to the license, and indicate if changes were made. Re-users may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+  subject:
+    subject_scheme: example, ANZSRC Field of Research
+    scheme_URI: example, https://linked.data.gov.au/def/anzsrc-for/2020/
+    value_URI:
+    - https://linked.data.gov.au/def/anzsrc-for/2020/3103
+    - https://linked.data.gov.au/def/anzsrc-for/2020/3104
+  funding_reference:
+  - funder_name: Australian Research Data Commons (ARDC)
+    award_IRI: doi.org/10.47486/DP720
+    award_number: DP720
+    award_title: AusTraits, A national database on the traits of Australia's complete flora.
+  - funder_name: Australian Research Data Commons (ARDC)
+    award_IRI: doi.org/10.47486/TD044
+    award_number: TD044
+    award_title: AusTraits, A national database on the traits of Australia's complete flora.
+  creators: 
+  - last_name: Falster
+    given_name: Daniel
+    ORCID: 0000-0002-9814-092X
+    affiliation: Evolution & Ecology Research Centre, UNSW Sydney, Australia
+  - last_name: Gallagher
+    given_name: Rachael
+    ORCID: 0000-0002-4680-8115
+    affiliation: Hawkesbury Institute for the Environment, Western Sydney University, Australia
+  - last_name: Elizabeth
+    given_name: Wenk
+    ORCID: 0000-0001-5640-5910
+    affiliation: Evolution & Ecology Research Centre, UNSW Sydney, Australia
+  contributors: .na

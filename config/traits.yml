@@ -1,0 +1,86 @@
+traits:
+  description: Names and details of plant traits included in the AusTraits compilation
+  type: list
+  elements:
+    leaf_photosynthetic_rate_per_area_maximum:
+      label: Leaf photosynthesis rate per unit leaf area under saturating light and
+        CO2 (Amax)
+      description: The photosynthetic rate [TO:0001015] of plant leaves [PO:0025034]
+        whose photosystem [GO:0009521] I and II reaction centers [GO:0009538; GO:0009539]
+        are exposed to saturating [NCIT:C61427] photosynthetically active radiation
+        [ENVO:01001864] and saturating atmospheric carbon dioxide [ENVO:01000451;
+        CHEBI:16526] concentrations [PATO:0000033], recorded per unit leaf area [PATO:0001323].;The
+        photosynthetic rate of a leaf exposed to saturating light (photosynthetically
+        active radiation) levels and saturating carbon dioxide concentrations, at
+        optimal leaf temperature and VPD conditions, per unit leaf area; maximum photosynthetic
+        rate.
+      comments: Leaf temperature and leaf-to-air vapour pressure deficit should be
+        recorded as context properties. If Tleaf and VPD are not reported, it is assumed
+        measurements are made at typical temperature and VPD conditions for the plant.
+      type: numeric
+      units: umol{CO2}/m2/s
+      allowed_values_min: 2.0
+      allowed_values_max: 65.0
+      entity_URI: https://w3id.org/APD/traits/trait_0020241    
+    plant_height:
+      label: Plant vegetative height
+      description: A whole plant morphology trait [TO:0000398] which is the maximum
+        [NCIT:C25564] vertical [PATO:0001854] height [PATO:0000119] of the vegetative
+        shoot system [PO:0025607] for a taxon [NCIT:C40098] in a given population
+        [PCO:0000001] or location [NCIT:C25341].;Maximum vertical height of the vegetative
+        shoot system for a taxon in a given location.
+      comments: This trait is not meant to document the height of all individuals
+        sampled, but instead the maximum height for a typical mature individual within
+        a population or across a taxon. The trait should only be scored for self-supporting
+        plants, not climbers whose height is dependent on the surrounding vegetation.
+        The documented height should be the maximum height achieved by vegetative
+        shoots, not the height reached by reproductive shoots, as it represents the
+        plant's access to light.
+      type: numeric
+      units: m
+      allowed_values_min: 0.001
+      allowed_values_max: 130.0
+      entity_URI: https://w3id.org/APD/traits/trait_0010023
+    leaf_type:
+      label: Leaf type
+      description: A leaf shape trait [TO:0000492] which is inclusive [NCIT:C166400]
+        categories describing the shape [PATO:0000052] of a leaf [PO:0025034] as broad,
+        needle-like, or scale-like.;Variable distinguishing between general leaf form
+        (shape) categories.
+      comments: Terms identifying the plant organ responsible for photosynthesis are
+        mapped to the trait `plant_photosynthetic_organ`, while `leaf_form_general`
+        only includes terms pertaining to the general form of the leaf. The trait
+        `leaf_shape` provides detailed vocabulary to describe a leaf's shape.
+      type: categorical
+      allowed_values_levels:
+        broadleaf: Flat leaf lamina, regardless of whether the leaves are or are not
+          toothed, lobed, or compound.
+        leafless: An adult stage plant that lacks leaves throughout the year.
+        needle: Needle or awl-shaped leaf that is generally 3-dimensional.
+        scale: Leaf reduced to a small scale.
+      entity_URI: https://w3id.org/APD/traits/trait_0011310
+    leaf_phenology:
+      label: Leaf phenology
+      description: A whole plant [PO:0000003] phenotype [NCIT:C16977] trait characterising
+        whether there is a part of the year when a plant sheds all leaves [PO:0025034]
+        (shedability [PATO:0001729]) and the environmental conditions [ENVO:01000203]
+        that cause a plant to shed its leaves.;Trait indicating whether a plant retains
+        a leaf canopy throughout the year and what environmental cues are associated
+        with canopy shedding.
+      type: categorical
+      allowed_values_levels:
+        brevi_deciduous: Plant briefly loses its entire leaf canopy but flushes a
+          new leaf canopy almost simultaneously to leaf loss.
+        cold_deciduous: Plant loses its entire leaf canopy for part of the year, in
+          response to cold.
+        deciduous: Plant loses its entire leaf canopy for part of the year, in response
+          to either drought or cold.
+        drought_deciduous: Plant loses its entire leaf canopy for part of the year,
+          in response to drought.
+        evergreen: Plant retains a leaf canopy throughout the year.
+        facultative_drought_deciduous: Plant sometimes loses its leaf canopy for part
+          of the year, in response to drought.
+        semi_deciduous: Plant thins, but does not entirely lose, its leaf canopy in
+          response to an environmental cue, usually drought.
+      entity_URI: https://w3id.org/APD/traits/trait_0030024
+      
