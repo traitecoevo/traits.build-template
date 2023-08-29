@@ -1,0 +1,41 @@
+Test_dataset_2
+(derived from Fonseca_2000 in AusTraits)
+
+reference doi: 10.1046/j.1365-2745.2000.00506.x
+data_collector: Carlos Fonseca, Departamento de Ecologia, Universidade Federal do Rio Grande do Norte, Natal, Brazil
+collection_date: 1996/1997
+description: Leaf traits for NSW environmental gradient studies. Looking at how
+trait combinations shift along rainfall and phosphorus gradients.
+basis_of_record: field
+life_stage: adult
+sampling_strategy: SITE SELECTION AND DESCRIPTION Forty-six sites were chosen in relation to rainfall and geological criteria (Table 1). Sites were spread from east to west across the rainfall gradient. Within a rainfall zone (as defined in Table 2), sites were required to be either in a different geology (categories from 1:1000 000 Australian geological series maps, Geological Survey of NSW, Department of Mines) or, if in the same geology, then at least 30km apart. Efforts were made to locate sites both on rocks with high content of phosphorus and other nutrients (e.g. basalts) and on rocks with low phosphorus content (e.g. sand- stones). Sites that were clearly run-on or run-off were avoided. Sites greater than 600m a.s.l. were avoided in order to stay within a modest temperature band (c. 15+-18 _C mean annual temperature). For each locality, sites were selected where vegetation reflected species composition prior to habitat modification by people of European origin. FIELD SAMPLING  At each site, a single quadrat of 50_20m (0.1 ha) was surveyed with the aim of finding all vascular species apparent above-ground. Vouchers collected for subsequent identification are deposited in Macquarie University herbarium. Percentage canopy outline cover of each species within the plot was estimated by eye. The present paper reports results for perennials only. Ephemerals were excluded because it was not possible to sample them consistently (they were not growing at all sites at the time of visit). In addition, their traits would not relate to year-round rainfall in the same way as for perennials. (Nearly all perennials are evergreen within the study area). Epiphytes, parasites and vines were excluded on the basis that canopy height estimates do not reflect the same height-support trade-off as for self-supporting species. Also, parasites like mistletoes do not pay the root-construction costs for supporting their transpiration needs.
+
+
+traits:
+"TRAIT Growth Form CATEGORICAL EP epiphyte (mistletoe) F fern G grass H herb S shrub T tree V vine" = plant_growth_form
+"TRAIT SLA UNITS mm2/g" = leaf_mass_per_area
+"TRAIT Leaf Size UNITS mm2" = leaf_area
+"TRAIT Leaf Dry Mass UNITS g" = leaf_dry_mass
+
+For the three numeric traits, fill in:
+
+unit_in: (units in column header)
+entity_type: population
+value_type: mean
+basis_of_value: measurement
+replicates: 5
+methods: Five leaves were collected and pressed for measurements of width, area
+    and SLA. Leaves were taken from full-light situations and, where possible, from
+    random branches on separate individuals (see Westoby 1998, appendix, for discussion
+    of protocols for characterizing leaves and height). Leaf outline images were captured
+    by HP DeskScan II scanner (Hewlett-Packard, Palo Alto, USA) and quantified by
+    Delta-T SCAN image analysis software (Delta-T Devices, Cambridge, UK).
+
+For plant_growth_form, fill in:
+
+unit_in: .na
+entity_type: species
+value_type: mode
+basis_of_value: expert_score
+replicates: .na
+methods: expert knowledge and reference books

@@ -1,0 +1,28 @@
+Test_dataset_1
+(derived from Falster_2005_1 in AusTraits)
+
+reference doi: 10.1111/j.0022-0477.2005.00992.x
+data_collector: Daniel Falster, Evolution & Ecology Research Centre, School of Biological, Earth, and Environmental Sciences, UNSW Sydney, Australia
+collection_date: 2002-11/2002-11
+description: Investigation into trait values correlated with plant height along
+    light availability and successional gradients for far north Queensland species.
+basis_of_record: field
+life_stage: adult
+sampling_strategy: Nineteen species, ranging from early to late successional status,
+    were selected using published sources (Hopkins & Graham 1987; Osunkoya 1996; Hyland
+    et al. 1999). Species selected to represent the light gradient establish and mature
+    in closed forest, where successional species are assumed absent. For inclusion
+    in this set we required that a species was known to establish and persist at low
+    light levels, as indicated either by published sources (Hyland et al. 1999; Osunkoya
+    1996) or by scientists familiar with the vegetation (A Graham, J Wells, CSIRO
+    Atherton; R Jensen). Twenty-six species, experiencing a range of light levels
+    at maturity, from high (canopy trees) to low light (understorey shrubs), were
+    included.
+traits:
+  LMA: population-level mean measurement (3 replicates); methods: LMA was calculated as the leaf dry mass (oven-dried for 48 hours at 65
+    deg C) divided by leaf size. It was measured on the first five fully expanded
+    leaves at the tip of each individual.
+  leaf area: population-level mean measurement (3 replicates); methods: Leaf size was calculated as the one-sided leaf area (flat bed scanner).
+    It was measured on the first five fully expanded leaves at the tip of each individual.
+  leaf nitrogen: population-level mean measurement (3 replicates); methods: Leaves from all individuals per species were pooled and finely ground for
+    nitrogen analysis. Total nitrogen concentration (%) was measured using complete combustion gas chromatography by Waite Analytical Services, Adelaide. The first five fully expanded leaves at the tip of each individual were used for the analysis.

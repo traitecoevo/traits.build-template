@@ -1,0 +1,1034 @@
+source:
+  primary:
+    key: Fonseca_2000
+    bibtype: Article
+    author: Carlos Roberto Fonseca, Jacob McC. Overton, Bronwyn Collins, Mark Westoby
+    year: 2000
+    title: Shifts in trait-combinations along rainfall and phosphorus gradients
+    journal: Journal of Ecology
+    volume: 88
+    pages: 964--977
+    publisher: Wiley-Blackwell
+    doi: 10.1046/j.1365-2745.2000.00506.x
+  secondary:
+    key: Fonseca_2003
+    bibtype: Article
+    year: '2003'
+    author: P. G. McDonald and C. R. Fonseca and J. McC. Overton and M. Westoby
+    journal: Functional Ecology
+    title: 'Leaf-size divergence along rainfall and soil-nutrient gradients: is the
+      method of size reduction common among clades?'
+    volume: '17'
+    number: '1'
+    pages: 50--57
+    doi: 10.1046/j.1365-2435.2003.00698.x
+contributors:
+  data_collectors:
+  - last_name: Fonseca
+    given_name: Carlos
+    ORCID: 0000-0003-0292-0399
+    affiliation: Departamento de Ecologia, Universidade Federal do Rio Grande do Norte,
+      Natal, Brazil
+    additional_role: contact
+  - last_name: Westoby
+    given_name: Mark
+    ORCID: 0000-0001-7690-4530
+    affiliation: Department of Biological Sciences, Macquarie University, Australia
+  assistants: Jacob McC. Overton, Bronwyn Collins
+  austraits_curators: Ian Wright
+dataset:
+  data_is_long_format: no
+  custom_R_code:      '
+    data %>%
+      mutate(across(c(`TRAIT Leaf Dry Mass UNITS g`), ~na_if(.x,0))) %>%
+      group_by(name_original) %>%
+        mutate(across(c(`TRAIT Growth Form CATEGORICAL EP epiphyte (mistletoe) F fern G grass H herb S shrub T tree V vine`),
+        replace_duplicates_with_NA)) %>%
+      ungroup() %>%
+      mutate(
+        leaflet_area = ifelse(name_original %in% c("Acacia deanei",
+          "Livistona australis", "Kennedia rubicunda", "Alpinia caerulea",
+          "Ripogonum fawcettianum", "Brachychiton acerifolius",
+          "Blechnum cartilagineum"), `TRAIT Leaf Size UNITS mm2`, NA),
+        `TRAIT Leaf Size UNITS mm2` = ifelse(name_original %in% c("Acacia deanei", 
+          "Livistona australis", "Kennedia rubicunda", "Alpinia caerulea",
+          "Ripogonum fawcettianum", "Brachychiton acerifolius",
+          "Blechnum cartilagineum"), NA, `TRAIT Leaf Size UNITS mm2`),
+        leaflet_dry_mass = ifelse(name_original %in% c("Acacia deanei", 
+          "Livistona australis", "Kennedia rubicunda", "Alpinia caerulea", 
+          "Ripogonum fawcettianum", "Brachychiton acerifolius", 
+          "Blechnum cartilagineum"), `TRAIT Leaf Dry Mass UNITS g`, NA),
+        `TRAIT Leaf Dry Mass UNITS g` = ifelse(name_original %in% c("Acacia deanei", 
+          "Livistona australis", "Kennedia rubicunda", "Alpinia caerulea", 
+          "Ripogonum fawcettianum", "Brachychiton acerifolius", 
+          "Blechnum cartilagineum"), NA, `TRAIT Leaf Dry Mass UNITS g`),
+        plant_growth_substrate = ifelse(`TRAIT Growth Form CATEGORICAL EP epiphyte (mistletoe) F fern G grass H herb S shrub T tree V vine` == "EP", "epiphyte", NA)
+      )
+  '
+  collection_date: 1996/1997
+  taxon_name: name_original
+  location_name: site_TEXT
+  description: Leaf traits for NSW environmental gradient studies. Looking at how
+    trait combinations shift along rainfall and phosphorus gradients.
+  basis_of_record: field
+  life_stage: adult
+  sampling_strategy: SITE SELECTION AND DESCRIPTION Forty-six sites were chosen in
+    relation to rainfall and geological criteria (Table 1). Sites were spread from
+    east to west across the rainfall gradient. Within a rainfall zone (as defined
+    in Table 2), sites were required to be either in a different geology (categories
+    from 1:1000 000 Australian geological series maps, Geological Survey of NSW, Department
+    of Mines) or, if in the same geology, then at least 30km apart. Efforts were made
+    to locate sites both on rocks with high content of phosphorus and other nutrients
+    (e.g. basalts) and on rocks with low phosphorus content (e.g. sand- stones). Sites
+    that were clearly run-on or run-off were avoided. Soil water potentials were not
+    measured because measurements over many years would have been necessary to obtain
+    a long-term site aver- age, and in any event soil water potentials reflect water
+    extraction by the vegetation as well as rainfall, whereas our aim was to use site
+    descriptors that were independent of vegetation. Sites greater than 600m a.s.l.
+    were avoided in order to stay within a modest temperature band (c. 15+-18 _C mean
+    annual temperature). For each locality, sites were selected where vegetation reflected
+    species composition prior to habitat modification by people of European origin.
+    At each site, five soil cores of 10-cm depth were collected and pooled. Subsamples
+    were air-dried and ground to 0.2mm then digested with sulphuric acid and hydrogen
+    peroxide (Anderson & Ingram 1989). Total soil P was determined colourimetrically
+    by an adaptation of Murphy & Ridley's (1967) single digestion method (Anderson
+    & Ingram 1989). For each site an estimate of mean annual rainfall was obtained
+    by interpolation between neighbouring rainfall stations with the use of the software
+    ESOCLIM (CSIRO Division of Wildlife and Ecology, Canberra). The database and interpolation
+    algorithm is as described for the related software BIOCLIM (Hutchinson &Bischof
+    1983).  Total soil phosphorus was adopted as the indicator of soil nutrients at
+    each site since (i) phosphorus is provided from the parent rock that characterizes
+    the site, in contrast to nitrogen, which is substantially provided by nitrogen
+    fixation (that is, by the vegetation itself); (ii) although only some soil phosphorus
+    is readily available for plant growth and other short-term physiological processes,
+    the total represents a pool of resource that has been available over the hundreds
+    to thousands of years during which the present-day species mixture at the site
+    has been assembled; (iii) other rock-derived nutrients, such as magnesium,are
+    strongly correlated with phosphorus in rock, being influenced mainly by the proportion
+    of nutrient-bearing minerals vs. quartz in the rock; and (iv) phosphorus is regarded
+    as the most important single nutrient in shaping vegetation in temperate Australia
+    (Beadle 1954; 1966).  FIELD SAMPLING  At each site, a single quadrat of 50_20m
+    (0.1 ha) was surveyed with the aim of finding all vascular species apparent above-ground.
+    Vouchers collected for subsequent identification are deposited in Macquarie University
+    herbarium. Percentage canopy outline cover of each species within the plot was
+    estimated by eye. The present paper reports results for perennials only. Ephemerals
+    were excluded because it was not possible to sample them consistently (they were
+    not growing at all sites at the time of visit). In addition, their traits would
+    not relate to year-round rainfall in the same way as for perennials. (Nearly all
+    perennials are evergreen within the study area). Epiphytes, parasites and vines
+    were excluded on the basis that canopy height estimates do not reflect the same
+    height-support trade-off as for self-supporting species. Also, para- sites like
+    mistletoes do not pay the root-construction costs for supporting their transpiration
+    needs.
+  original_file: Fonseca NSW (Wright).XLS
+  notes: There are 9 cases where a species has the same trait values at multiple sites,
+    but otherwise a given species does have unique/different trait values across sites.
+    Lizzy Wenk has gone back to Ian Wright's data repository to confirm all available
+    data is in AusTraits. (6 Feb 2020)
+locations:
+  Acacia Creek:
+    longitude (deg): 142.071
+    latitude (deg): -31.817
+    elevation (m): 150
+    soil P, total (mg/kg): 330
+    soil N, total (ppm): 0.06
+    description: shrubland
+    geology (parent material): Quaternary - Flat to gently undulating plains and dunes
+      of red and brown clayed sand, loam and lateritic soils; largely aeolian (Qd)
+    precipitation, MAP (mm): 206
+  Balranald:
+    longitude (deg): 143.596
+    latitude (deg): -34.356
+    elevation (m): 60
+    soil P, total (mg/kg): 242
+    soil N, total (ppm): 0.06
+    description: shrubland
+    geology (parent material): Quaternary - Alluvial and riverine plain deposits of
+      gravel, sand, silt and clay; claypans and outwash areas of black and red clayed
+      silt and sand; coastal sand dunes and beach deposits (Qa)
+    precipitation, MAP (mm): 288
+  Bola Creek:
+    longitude (deg): 151.033
+    latitude (deg): -34.15
+    elevation (m): 50
+    soil P, total (mg/kg): 650
+    description: rainforest
+    geology (parent material): Triassic - Massive quartz sanstone, minor shale lenses
+      (Rh)
+    precipitation, MAP (mm): 1229
+  Brummagen Creek:
+    longitude (deg): 148.363
+    latitude (deg): -32.239
+    elevation (m): 300
+    soil P, total (mg/kg): 431
+    soil N, total (ppm): 0.08
+    description: woodland
+    geology (parent material): Quaternary - Alluvial and riverine plain deposits of
+      gravel, sand, silt and clay; claypans and outwash areas of black and red clayed
+      silt and sand; coastal sand dunes and beach deposits (Qa)
+    precipitation, MAP (mm): 527
+  Burbie:
+    longitude (deg): 148.979
+    latitude (deg): -31.291
+    elevation (m): 550
+    soil P, total (mg/kg): 316
+    soil N, total (ppm): 0.2
+    description: woodland
+    geology (parent material): Tertiary - Basaltic dolerite, minor trachyte, teschenite,
+      phonolite, andesite flows, plugs and sills,minor tuff, breccia, diatomite (Tb)
+    precipitation, MAP (mm): 630
+  Cedar Brush:
+    longitude (deg): 150.686
+    latitude (deg): -31.851
+    elevation (m): 800
+    soil P, total (mg/kg): 2063
+    soil N, total (ppm): 0.45
+    description: rainforest
+    geology (parent material): Tertiary - Basalt, dolerite, polymictic conglomerate,
+      quartzose sandstone, shale, bole (Tl)
+    precipitation, MAP (mm): 863
+  Cobar:
+    longitude (deg): 145.798
+    latitude (deg): -31.51
+    elevation (m): 250
+    soil P, total (mg/kg): 407
+    soil N, total (ppm): 0.06
+    description: tall shrubland
+    geology (parent material): Silurian - Feldspathic and lithic greywacke, siltstone,
+      mudstone, argillaceous and quartzitic sandstone, basalt quartz pebble conglomerate
+      (Slc)
+    precipitation, MAP (mm): 341
+  Coffs Harbour:
+    longitude (deg): 152.972
+    latitude (deg): -30.321
+    elevation (m): 195
+    soil P, total (mg/kg): 249
+    soil N, total (ppm): 0.39
+    description: wet sclerophyll forest
+    geology (parent material): Devonian - Siliceous argilite, slate, minor siliceous
+      greywacke (Db)
+    precipitation, MAP (mm): 2034
+  Copeland:
+    longitude (deg): 151.816
+    latitude (deg): -31.982
+    elevation (m): 520
+    soil P, total (mg/kg): 753
+    description: dry sclerophyll forest
+    geology (parent material): Devonian - Laminated siltstone, sandstone, minor limestone
+      (Do)
+    precipitation, MAP (mm): 1291
+  Copper Mine:
+    longitude (deg): 142.585
+    latitude (deg): -30.852
+    elevation (m): 300
+    soil P, total (mg/kg): 276
+    soil N, total (ppm): 0.08
+    description: shrubland
+    geology (parent material): Carpentarian - Phyllite, shale, chert, quartz muscovite
+      schist (co)
+    precipitation, MAP (mm): 241
+  Cox's Gap:
+    longitude (deg): 150.267
+    latitude (deg): -32.45
+    elevation (m): 300
+    soil P, total (mg/kg): 247
+    soil N, total (ppm): 0.15
+    description: woodland
+    geology (parent material): Permian - Sandstone, shale, conglomerate, coal (Pus)
+    precipitation, MAP (mm): 575
+  Cumberland:
+    longitude (deg): 151.039
+    latitude (deg): -33.746
+    elevation (m): 120
+    soil P, total (mg/kg): 216
+    description: wet sclerophyll forest
+    geology (parent material): Triassic - Shale, lithic sandstone (Rw)
+    precipitation, MAP (mm): 1064
+  Danu:
+    longitude (deg): 148.994
+    latitude (deg): -31.317
+    elevation (m): 600
+    soil P, total (mg/kg): 179
+    soil N, total (ppm): 0.32
+    description: woodland
+    geology (parent material): Tertiary - Basaltic dolerite, minor trachyte, teschenite,
+      phonolite, andesite flows, plugs and sills,minor tuff, breccia, diatomite (Tb)
+    precipitation, MAP (mm): 639
+  Dolo Hills:
+    longitude (deg): 142.674
+    latitude (deg): -31.726
+    elevation (m): 150
+    soil P, total (mg/kg): 253
+    soil N, total (ppm): 0.05
+    description: tall shrubland
+    geology (parent material): Carpentarian - Phyllite, shale, chert, quartz muscovite
+      schist (Co)
+    precipitation, MAP (mm): 222
+  Emmdale:
+    longitude (deg): 144.225
+    latitude (deg): -31.682
+    elevation (m): 123
+    soil P, total (mg/kg): 123
+    soil N, total (ppm): 0.04
+    description: cypress pine
+    geology (parent material): Quaternary - Flat to gently undulating plains and dunes
+      of red and brown clayed sand, loam and lateritic soils; largely aeolian (Qd)
+    precipitation, MAP (mm): 250
+  Hermidale:
+    longitude (deg): 146.504
+    latitude (deg): -31.562
+    elevation (m): 250
+    soil P, total (mg/kg): 454
+    soil N, total (ppm): 0.09
+    description: woodland
+    geology (parent material): Ordovician - Schist, phyllite, quartz greywacke, quartzite,
+      slate, minor altered basic volcanics (yg)
+    precipitation, MAP (mm): 389
+  Honeysuckle:
+    longitude (deg): 150.268
+    latitude (deg): -32.399
+    elevation (m): 230
+    soil P, total (mg/kg): 246
+    soil N, total (ppm): 0.32
+    description: dry sclerophyll forest
+    geology (parent material): Triassic - Massive quartzose sandstone, flaggy sandstone,
+      siltstone, shale (Rs)
+    precipitation, MAP (mm): 552
+  Kalyanka Creek:
+    longitude (deg): 143.503
+    latitude (deg): -31.46
+    elevation (m): 80
+    soil P, total (mg/kg): 212
+    soil N, total (ppm): 0.03
+    description: shrubland
+    geology (parent material): Quaternary - Alluvial and riverine plain deposits of
+      gravel, sand, silt and clay; claypans and outwash areas of black and red clayed
+      silt and sand; coastal sand dunes and beach deposits (Qa)
+    precipitation, MAP (mm): 229
+  Kayrunnera:
+    longitude (deg): 142.539
+    latitude (deg): -30.673
+    elevation (m): 200
+    soil P, total (mg/kg): 185
+    soil N, total (ppm): 0.03
+    description: shrubland
+    geology (parent material): Cambrian - Diorite, dolerite, basalt (Ezb)
+    precipitation, MAP (mm): 237
+  Kuringai-Chase NP:
+    longitude (deg): 151.284
+    latitude (deg): -33.586
+    elevation (m): 140
+    soil P, total (mg/kg): 95
+    soil N, total (ppm): 0.15
+    description: heathland
+    geology (parent material): Triassic - Massive quartz sanstone, minor shale lenses
+      (Rh)
+    precipitation, MAP (mm): 1231
+  Lake Mere:
+    longitude (deg): 144.907
+    latitude (deg): -30.271
+    elevation (m): 100
+    soil P, total (mg/kg): 228
+    soil N, total (ppm): 0.06
+    description: tall shrubland
+    geology (parent material): Quaternary - Flat to gently undulating plains and dunes
+      of red and brown clayed sand, loam and lateritic soils; largely aeolian (Qd)
+    precipitation, MAP (mm): 269
+  Little Topar:
+    longitude (deg): 142.161
+    latitude (deg): -31.796
+    elevation (m): 150
+    soil P, total (mg/kg): 173
+    soil N, total (ppm): 0.05
+    description: shrubland
+    geology (parent material): Quaternary - Flat to gently undulating plains and dunes
+      of red and brown clayed sand, loam and lateritic soils; largely aeolian (Qd)
+    precipitation, MAP (mm): 208
+  Macquarie Pass:
+    longitude (deg): 150.656
+    latitude (deg): -34.567
+    elevation (m): 265
+    soil P, total (mg/kg): 754
+    soil N, total (ppm): 0.46
+    description: rainforest
+    geology (parent material): Permian - Lithic sandstone, shale, carbonaceous shale,
+      coal conglomerate tuff (Pui)
+    precipitation, MAP (mm): 1578
+  Matakana:
+    longitude (deg): 146.032
+    latitude (deg): -33.02
+    elevation (m): 160
+    soil P, total (mg/kg): 142
+    soil N, total (ppm): 0.06
+    description: mallee
+    geology (parent material): Quaternary - Flat to gently undulating plains and dunes
+      of red and brown clayed sand, loam and lateritic soils; largely aeolian (Qd)
+    precipitation, MAP (mm): 369
+  Morton NP:
+    longitude (deg): 150.336
+    latitude (deg): -34.778
+    elevation (m): 315
+    soil P, total (mg/kg): 42
+    soil N, total (ppm): 0.04
+    description: heathland
+    geology (parent material): Permian - Lithic sandstone, feldspathic sandstone,
+      sandy mudstone, shale, quartz sandstone, conglomerate, pebbly siltstone, latite
+      flows (Ps)
+    precipitation, MAP (mm): 1821
+  Mt Keira:
+    longitude (deg): 150.842
+    latitude (deg): -34.405
+    elevation (m): 330
+    soil P, total (mg/kg): 725
+    soil N, total (ppm): 0.37
+    description: rainforest
+    geology (parent material): Permian - Lithic sandstone, shale, carbonaceous shale,
+      coal conglomerate tuff (Pui)
+    precipitation, MAP (mm): 1692
+  Mungo NP 1:
+    longitude (deg): 143.086
+    latitude (deg): -33.75
+    elevation (m): 100
+    soil P, total (mg/kg): 365
+    soil N, total (ppm): 0.07
+    description: shrubland
+    geology (parent material): Quaternary - Alluvial and riverine plain deposits of
+      gravel, sand, silt and clay; claypans and outwash areas of black and red clayed
+      silt and sand; coastal sand dunes and beach deposits (Qa)
+    precipitation, MAP (mm): 271
+  Mungo NP 3:
+    longitude (deg): 143.128
+    latitude (deg): -33.785
+    elevation (m): 100
+    soil P, total (mg/kg): 216
+    soil N, total (ppm): 0.08
+    description: cypress pine
+    geology (parent material): Quaternary - Flat to gently undulating plains and dunes
+      of red and brown clayed sand, loam and lateritic soils; largely aeolian (Qd)
+    precipitation, MAP (mm): 272
+  Mungo NP 4:
+    longitude (deg): 143.175
+    latitude (deg): -33.712
+    elevation (m): 100
+    soil P, total (mg/kg): 111
+    soil N, total (ppm): 0.04
+    description: mallee
+    geology (parent material): Quaternary - Flat to gently undulating plains and dunes
+      of red and brown clayed sand, loam and lateritic soils; largely aeolian (Qd)
+    precipitation, MAP (mm): 270
+  Myall Lakes:
+    longitude (deg): 152.327
+    latitude (deg): -32.514
+    elevation (m): 15
+    soil P, total (mg/kg): 22
+    soil N, total (ppm): 0.07
+    description: heathland
+    geology (parent material): Quaternary - Alluvial and riverine plain deposits of
+      gravel, sand, silt and clay; claypans and outwash areas of black and red clayed
+      silt and sand; coastal sand dunes and beach deposits (Qa)
+    precipitation, MAP (mm): 1374
+  Nambucca Heads:
+    longitude (deg): 153.002
+    latitude (deg): -30.636
+    elevation (m): 30
+    soil P, total (mg/kg): 152
+    soil N, total (ppm): 0.22
+    description: wet sclerophyll forest
+    geology (parent material): Perminan - Slate, phyllite, schistose sandstone, schistose
+      conglomerate (Pls)
+    precipitation, MAP (mm): 1429
+  Narriah Mountain:
+    longitude (deg): 146.702
+    latitude (deg): -33.882
+    elevation (m): 350
+    soil P, total (mg/kg): 401
+    soil N, total (ppm): 0.12
+    description: woodland
+    geology (parent material): Ordovician - Quartzose greywacke, siltstone, slate
+      chert, quartzite, phyllite, hornfels, schist, sanstone, mudstone, shale (yu)
+    precipitation, MAP (mm): 475
+  Netallie Hill:
+    longitude (deg): 143.26
+    latitude (deg): -31.567
+    elevation (m): 100
+    soil P, total (mg/kg): 259
+    soil N, total (ppm): 0.06
+    description: shrubland
+    geology (parent material): Devonian - Quartzite and sandstone, pebbly to conglomeratic
+      in part, shale ans siltstone (Dum)
+    precipitation, MAP (mm): 226
+  Nyngan:
+    longitude (deg): 147.209
+    latitude (deg): -31.521
+    elevation (m): 170
+    soil P, total (mg/kg): 488
+    soil N, total (ppm): 0.06
+    description: tall shrubland
+    geology (parent material): Quaternary - Alluvial and riverine plain deposits of
+      gravel, sand, silt and clay; claypans and outwash areas of black and red clayed
+      silt and sand; coastal sand dunes and beach deposits (Qa)
+    precipitation, MAP (mm): 404
+  Ourimbah:
+    longitude (deg): 151.292
+    latitude (deg): -33.264
+    elevation (m): 290
+    soil P, total (mg/kg): 40
+    soil N, total (ppm): 0.05
+    description: heathland
+    geology (parent material): Quaternary - Alluvial and riverine plain deposits of
+      gravel, sand, silt and clay; claypans and outwash areas of black and red clayed
+      silt and sand; coastal sand dunes and beach deposits (Qa)
+    precipitation, MAP (mm): 1251
+  Purnawilla:
+    longitude (deg): 143.467
+    latitude (deg): -31.355
+    elevation (m): 100
+    soil P, total (mg/kg): 269
+    soil N, total (ppm): 0.05
+    description: shrubland
+    geology (parent material): Tertiary - Gravel, sand, clay, poorly consolidated
+      conglomerate, sandstone and siltstone (Ts)
+    precipitation, MAP (mm): 230
+  Rosewood:
+    longitude (deg): 146.28
+    latitude (deg): -32.948
+    elevation (m): 200
+    soil P, total (mg/kg): 196
+    soil N, total (ppm): 0.1
+    description: woodland
+    geology (parent material): Silurian - Feldspathic and lithic greywacke, siltstone,
+      mudstone, argillaceous and quartzitic sandstone, basalt quartz pebble conglomerate
+      (Slc)
+    precipitation, MAP (mm): 381
+  South White Cliffs:
+    longitude (deg): 143.089
+    latitude (deg): -31.084
+    elevation (m): 80
+    soil P, total (mg/kg): 234
+    soil N, total (ppm): 0.08
+    description: shrubland
+    geology (parent material): Tertiary - Silcrete, ferricrete, porcellanite (Ti)
+    precipitation, MAP (mm): 216
+  Strickland:
+    longitude (deg): 151.333
+    latitude (deg): -33.373
+    elevation (m): 120
+    soil P, total (mg/kg): 278
+    description: rainforest
+    geology (parent material): Triassic - Massive quartz sanstone, minor shale lenses
+      (Rh)
+    precipitation, MAP (mm): 1196
+  Stuart Point:
+    longitude (deg): 152.988
+    latitude (deg): -30.837
+    elevation (m): 10
+    soil P, total (mg/kg): 24
+    soil N, total (ppm): 0.21
+    description: heathland
+    geology (parent material): Quaternary - Alluvial and riverine plain deposits of
+      gravel, sand, silt and clay; claypans and outwash areas of black and red clayed
+      silt and sand; coastal sand dunes and beach deposits (Qa)
+    precipitation, MAP (mm): 1327
+  Trangie:
+    longitude (deg): 148.037
+    latitude (deg): -31.973
+    elevation (m): 220
+    soil P, total (mg/kg): 408
+    soil N, total (ppm): 0.14
+    description: woodland
+    geology (parent material): Tertiary - Gravel, sand, clay, poorly consolidated
+      conglomerate, sandstone and siltstone (Ts)
+    precipitation, MAP (mm): 479
+  Tundalya:
+    longitude (deg): 144.834
+    latitude (deg): -30.731
+    elevation (m): 90
+    soil P, total (mg/kg): 407
+    soil N, total (ppm): 0.07
+    description: woodland
+    geology (parent material): Quaternary - Alluvial and riverine plain deposits of
+      gravel, sand, silt and clay; claypans and outwash areas of black and red clayed
+      silt and sand; coastal sand dunes and beach deposits (Qa)
+    precipitation, MAP (mm): 262
+  Weddin Mountains:
+    longitude (deg): 148.001
+    latitude (deg): -33.893
+    elevation (m): 400
+    soil P, total (mg/kg): 99
+    soil N, total (ppm): 0.12
+    description: cypress pine
+    geology (parent material): Devonian - Sandstone with siltstone, minor conglomerate
+      (Duh)
+    precipitation, MAP (mm): 589
+  West Copper Mine:
+    longitude (deg): 142.579
+    latitude (deg): -30.858
+    elevation (m): 250
+    soil P, total (mg/kg): 275
+    soil N, total (ppm): 0.07
+    description: shrubland
+    geology (parent material): Cambrian - Diorite, dolerite, basalt (Ezb)
+    precipitation, MAP (mm): 232
+  White Cliffs:
+    longitude (deg): 143.062
+    latitude (deg): -30.907
+    elevation (m): 150
+    soil P, total (mg/kg): 382
+    soil N, total (ppm): 0.05
+    description: tall shrubland
+    geology (parent material): Cretaceous - Siltstone, sandy shale, minor sandstone,
+      some thin coal seams (Klr)
+    precipitation, MAP (mm): 228
+  Yathong:
+    longitude (deg): 145.44
+    latitude (deg): -32.59
+    elevation (m): 150
+    soil P, total (mg/kg): 54
+    soil N, total (ppm): 0.02
+    description: mallee
+    geology (parent material): Quaternary - Flat to gently undulating plains and dunes
+      of red and brown clayed sand, loam and lateritic soils; largely aeolian (Qd)
+    precipitation, MAP (mm): 320
+contexts: .na
+traits:
+- var_in: site_id
+  unit_in: .na
+  trait_name: .na
+  entity_type: .na
+  value_type: .na
+  basis_of_value: .na
+  replicates: .na
+  methods: .na
+- var_in: TRAIT Growth Form CATEGORICAL EP epiphyte (mistletoe) F fern G grass H herb
+    S shrub T tree V vine
+  unit_in: .na
+  trait_name: plant_growth_form
+  entity_type: species
+  value_type: mode
+  basis_of_value: expert_score
+  replicates: .na
+  methods: unknown
+- var_in: plant_growth_substrate
+  unit_in: .na
+  trait_name: plant_growth_substrate
+  entity_type: species
+  value_type: mode
+  basis_of_value: expert_score
+  replicates: .na
+  methods: unknown
+- var_in: TRAIT SLA UNITS mm2/g
+  unit_in: mm2/mg
+  trait_name: leaf_mass_per_area
+  entity_type: population
+  value_type: mean
+  basis_of_value: measurement
+  replicates: 5
+  methods: Five leaves were collected and pressed for measurements of width, area
+    and SLA. Leaves were taken from full-light situations and, where possible, from
+    random branches on separate individuals (see Westoby 1998, appendix, for discussion
+    of protocols for characterizing leaves and height). Leaf outline images were captured
+    by HP DeskScan II scanner (Hewlett-Packard, Palo Alto, USA) and quantified by
+    Delta-T SCAN image analysis software (Delta-T Devices, Cambridge, UK). No information
+    given on protocol for determining mass.
+- var_in: TRAIT Leaf Size UNITS mm2
+  unit_in: mm2
+  trait_name: leaf_area
+  entity_type: population
+  value_type: mean
+  basis_of_value: measurement
+  replicates: 5
+  methods: Five leaves were collected and pressed for measurements of width, area
+    and SLA. Leaves were taken from full-light situations and, where possible, from
+    random branches on separate individuals (see Westoby 1998, appendix, for discussion
+    of protocols for characterizing leaves and height). Leaf outline images were captured
+    by HP DeskScan II scanner (Hewlett-Packard, Palo Alto, USA) and quantified by
+    Delta-T SCAN image analysis software (Delta-T Devices, Cambridge, UK)
+- var_in: leaflet_area
+  unit_in: mm2
+  trait_name: leaflet_area
+  entity_type: population
+  value_type: mean
+  basis_of_value: measurement
+  replicates: 5
+  methods: Five leaves were collected and pressed for measurements of width, area
+    and SLA. Leaves were taken from full-light situations and, where possible, from
+    random branches on separate individuals (see Westoby 1998, appendix, for discussion
+    of protocols for characterizing leaves and height). Leaf outline images were captured
+    by HP DeskScan II scanner (Hewlett-Packard, Palo Alto, USA) and quantified by
+    Delta-T SCAN image analysis software (Delta-T Devices, Cambridge, UK)
+- var_in: TRAIT Leaf Dry Mass UNITS g
+  unit_in: g
+  trait_name: leaf_dry_mass
+  entity_type: population
+  value_type: mean
+  basis_of_value: measurement
+  replicates: 5
+  methods: unknown
+- var_in: leaflet_dry_mass
+  unit_in: g
+  trait_name: leaflet_dry_mass
+  entity_type: population
+  value_type: mean
+  basis_of_value: measurement
+  replicates: 5
+  methods: unknown
+- var_in: TRAIT LeafWidth UNITS mm
+  unit_in: mm
+  trait_name: leaf_width
+  entity_type: population
+  value_type: mean
+  basis_of_value: measurement
+  replicates: 5
+  methods: Five leaves were collected and pressed for measurements of width, area
+    and SLA. Leaves were taken from full-light situations and, where possible, from
+    random branches on separate individuals (see Westoby 1998, appendix, for discussion
+    of protocols for characterizing leaves and height). Leaf outline images were captured
+    by HP DeskScan II scanner (Hewlett-Packard, Palo Alto, USA) and quantified by
+    Delta-T SCAN image analysis software (Delta-T Devices, Cambridge, UK)
+- var_in: TRAIT Height UNITS m
+  unit_in: m
+  trait_name: .na
+  entity_type: population
+  value_type: maximum
+  basis_of_value: measurement
+  replicates: 1
+  methods: The height of uppermost leaves was recorded for mature individuals of each
+    species. If only seedlings were present within the quadrat, full-grown individuals
+    were sought nearby. (This trait, plant_height, is excluded, because it measures
+    current individual plant height, not the species maximum height.)
+substitutions:
+- trait_name: plant_growth_form
+  find: H
+  replace: herb
+- trait_name: plant_growth_form
+  find: S
+  replace: shrub
+- trait_name: plant_growth_form
+  find: T
+  replace: tree
+- trait_name: plant_growth_form
+  find: EP
+  replace: shrub
+- trait_name: plant_growth_form
+  find: G
+  replace: graminoid
+- trait_name: plant_growth_form
+  find: V
+  replace: climber_herbaceous
+- trait_name: plant_growth_form
+  find: F
+  replace: fern
+taxonomic_updates:
+- find: Acacia brownii/ulicifolia
+  replace: Acacia sp. [Acacia brownii/ulicifolia; Fonseca_2000]
+  reason: match_04. Rewording taxon where `/` indicates uncertain species identification
+    to align with `APC accepted` genus (2022-11-10)
+  taxonomic_resolution: genus
+- find: Acacia burkitti
+  replace: Acacia burkittii
+  reason: match_07_fuzzy. Fuzzy alignment with accepted canonical name in APC (2022-11-10)
+  taxonomic_resolution: Species
+- find: Acacia cheelii/melanoxylon
+  replace: Acacia sp. [Acacia cheelii/melanoxylon; Fonseca_2000]
+  reason: match_04. Rewording taxon where `/` indicates uncertain species identification
+    to align with `APC accepted` genus (2022-11-10)
+  taxonomic_resolution: genus
+- find: Acacia sp
+  replace: Acacia sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Alectryon oleifolium
+  replace: Alectryon oleifolius
+  reason: match_07_fuzzy. Fuzzy alignment with accepted canonical name in APC (2022-11-10)
+  taxonomic_resolution: Species
+- find: Allocasuarina sp
+  replace: Allocasuarina sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Amyema pendulum pendulum
+  replace: Amyema pendulum subsp. pendulum
+  reason: match_06. Automatic alignment with synonymous term among known canonical
+    names APC (2022-11-10)
+  taxonomic_resolution: Subspecies
+- find: Amyema sp
+  replace: Amyema sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Angophora sp
+  replace: Angophora sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Aristida sp
+  replace: Aristida sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Asteraceae sp
+  replace: Asteraceae sp. [Fonseca_2000]
+  reason: match_02. Rewording taxon with ending with `sp.` to indicate a family-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: family
+- find: Banksia spinulosa collina
+  replace: Banksia spinulosa var. collina
+  reason: match_06. Automatic alignment with synonymous term among accepted canonical
+    names in APC (2022-11-10)
+  taxonomic_resolution: Varietas
+- find: Brachyloma sp
+  replace: Brachyloma sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Bulbine sp
+  replace: Bulbine sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Callitris sp
+  replace: Callitris sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Cephalaria cephalobotrys
+  replace: Cephalaralia cephalobotrys
+  reason: match_07_fuzzy. Fuzzy alignment with accepted canonical name in APC (2022-11-10)
+  taxonomic_resolution: Species
+- find: Chenopodiaceae sp
+  replace: Chenopodiaceae sp. [Fonseca_2000]
+  reason: match_02. Rewording taxon with ending with `sp.` to indicate a family-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: family
+- find: Chenopodium desertorum subsp.anidio
+  replace: Chenopodium desertorum subsp. anidiophyllum
+  reason: Manual alignment with canonical name with rank `subspecies` in APC (Elizabeth
+    Wenk, 2022-11-12)
+  taxonomic_resolution: Subspecies
+- find: Chenopodium sp
+  replace: Chenopodium sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Clematis sp
+  replace: Clematis sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Conospermum longifolium longifolium
+  replace: Conospermum longifolium subsp. longifolium
+  reason: match_06. Automatic alignment with synonymous term among accepted canonical
+    names in APC (2022-11-10)
+  taxonomic_resolution: Subspecies
+- find: Cryptocarya microneura/glaucescens
+  replace: Cryptocarya sp. [Cryptocarya microneura/glaucescens; Fonseca_2000]
+  reason: match_04. Rewording taxon where `/` indicates uncertain species identification
+    to align with `APC accepted` genus (2022-11-10)
+  taxonomic_resolution: genus
+- find: Cyperus sp
+  replace: Cyperus sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Danthonia sp
+  replace: Danthonia sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Desmodium sp
+  replace: Desmodium sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Digitaria sp
+  replace: Digitaria sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Dodonaea viscosa cuneata
+  replace: Dodonaea viscosa subsp. cuneata
+  reason: match_06. Automatic alignment with synonymous term among accepted canonical
+    names in APC (2022-11-10)
+  taxonomic_resolution: Subspecies
+- find: Echinopogon sp
+  replace: Echinopogon sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Epacris sp
+  replace: Epacris sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Eragrostis sp
+  replace: Eragrostis sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Eucalyptus sp
+  replace: Eucalyptus sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Fabaceae sp
+  replace: Fabaceae sp. [Fonseca_2000]
+  reason: match_02. Rewording taxon with ending with `sp.` to indicate a family-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: family
+- find: Heliotropium sp
+  replace: Heliotropium sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Hibbertia sp
+  replace: Hibbertia sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Leucopogon sp
+  replace: Leucopogon sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Liliaceae sp
+  replace: Liliaceae sp. [Fonseca_2000]
+  reason: match_02. Rewording taxon with ending with `sp.` to indicate a family-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: family
+- find: Lomandra sp
+  replace: Lomandra sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Loranthaceae sp
+  replace: Loranthaceae sp. [Fonseca_2000]
+  reason: match_02. Rewording taxon with ending with `sp.` to indicate a family-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: family
+- find: Maireana sp
+  replace: Maireana sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Medicago sp
+  replace: Medicago sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Panicum sp
+  replace: Panicum sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Parsonsia sp.A
+  replace: Parsonsia sp. A
+  reason: match_07_fuzzy. Fuzzy alignment with known canonical name in APC (2022-11-10)
+  taxonomic_resolution: Species
+- find: Patersonia sericea longifolia
+  replace: Patersonia sericea var. longifolia
+  reason: match_06. Automatic alignment with synonymous term among accepted canonical
+    names in APC (2022-11-10)
+  taxonomic_resolution: Varietas
+- find: Phyllota sp
+  replace: Phyllota sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Pimelea sp
+  replace: Pimelea sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Poa sp
+  replace: Poa sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Poaceae sp
+  replace: Poaceae sp. [Fonseca_2000]
+  reason: match_02. Rewording taxon with ending with `sp.` to indicate a family-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: family
+- find: Ptilanthelium deusteum
+  replace: Ptilanthelium deustum
+  reason: match_07_fuzzy. Fuzzy alignment with known canonical name in APC (2022-11-10)
+  taxonomic_resolution: Species
+- find: Pultenaea sp
+  replace: Pultenaea sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Sclerolaena quinquecuspis
+  replace: Bassia quinquecuspis
+  reason: Manual alignment with canonical species name in APC (Elizabeth Wenk, 2022-11-12)
+  taxonomic_resolution: Species
+- find: Sclerolaena sp
+  replace: Sclerolaena sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Senna artemisioides artemisioides
+  replace: Senna artemisioides subsp. x artemisioides
+  reason: match_12. Automatic alignment with infraspecific canonical name in APC accepted
+    when notes are ignored (2022-11-12)
+  taxonomic_resolution: Subspecies
+- find: Senna artemisioides zygophylla
+  replace: Senna artemisioides subsp. zygophylla
+  reason: match_06. Automatic alignment with synonymous term among accepted canonical
+    names in APC (2022-11-10)
+  taxonomic_resolution: Subspecies
+- find: Sida limestone
+  replace: Sida sp. limestone (D.E.Albrecht 5748)
+  reason: match_14. Automatic alignment with species-level canonical name in APC accepted
+    when notes are ignored (2022-11-10)
+  taxonomic_resolution: Species
+- find: Sida sp
+  replace: Sida sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Solanum sp
+  replace: Solanum sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Stipa sp
+  replace: Stipa sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APNI` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Tabernaemontana angustisepala
+  replace: Tabernaemontana orientalis var. angustisepala
+  reason: Manual alignment with canonical name of rank `varietas` in APC (Elizabeth
+    Wenk, 2022-11-12)
+  taxonomic_resolution: Varietas
+- find: Vittadinia sp
+  replace: Vittadinia sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+- find: Xanthorrhoea sp
+  replace: Xanthorrhoea sp. [Fonseca_2000]
+  reason: match_01. Rewording taxon with ending with `sp.` to indicate a genus-level
+    alignment with `APC accepted` name (2022-11-10)
+  taxonomic_resolution: genus
+exclude_observations:
+- variable: taxon_name
+  find: unk10_1 sp, unk10_1a sp, unk12_1a sp, unk12_1b sp, unk12_1c sp, unk13_1 sp,
+    unk16_18 sp, unk16_19 sp, unk16_4 sp, unk17_13 sp, unk17_4 sp, unk2_1 sp, unk25_1
+    sp, unk25_10 sp, unk25_6 sp, unk25_9 sp, unk26_3 sp, unk29_15 sp, unk29_17 sp,
+    unk29_18 sp, unk29_19 sp, unk29_25 sp, unk30_5 sp, unk31_12 sp, unk31_15 sp, unk31_8
+    sp, unk32_2 sp, unk33_7 sp, unk34_13 sp, unk36_1 sp, unk36_14 sp, unk36_15 sp,
+    unk36_16 sp, unk36_17 sp, unk36_18 sp, unk36_20 sp, unk37_21 sp, unk37_24 sp,
+    unk38_29 sp, unk4_1 sp, unk4_1a sp, unk4_1b sp, unk43_24 sp, unk44_33 sp, unk44_39
+    sp, unk45_10 sp, unk45_12 sp, unk45_17 sp, unk45_23 sp, unk45_29 sp, unk45_33
+    sp, unk45_34 sp, unk45_36 sp, unk45_38 sp, unk45_4 sp, unk45_40 sp, unk45_43 sp,
+    unk45_44 sp, unk45_46 sp, unk45_8 sp, unk45_9 sp, unk47_22 sp, unk47_28 sp, unk47_3
+    sp, unk47_35 sp, unk47_39 sp, unk47_4 sp, unk47_54 sp, unk47_56 sp, unk48_26 sp,
+    unk48_27 sp, unk48_31 sp, unk48_42 sp, unk48_44 sp, unk48_45 sp, unk48_51 sp,
+    unk48_57 sp, unk48_61 sp, unk48_63 sp, unk48_64 sp, unk48_67 sp, unk48_68 sp,
+    unk48_69 sp, unk48_70 sp, unk48_71 sp, unk48_72 sp, unk50_30 sp, unk50_47 sp,
+    unk7_11 sp, unk8_1 sp
+  reason: omitting completely unknown taxa (E Wenk, 2022.02.24)
+questions: .na

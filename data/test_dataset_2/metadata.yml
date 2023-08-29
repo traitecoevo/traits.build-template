@@ -1,0 +1,162 @@
+source:
+  primary:
+    key: Test_dataset_2
+    bibtype: Article
+    year: '2000'
+    author: Carlos Roberto Fonseca and Jacob Mcc. Overton and Bronwyn Collins and
+      Mark Westoby
+    journal: Journal of Ecology
+    title: Shifts in trait-combinations along rainfall and phosphorus gradients
+    volume: '88'
+    number: '6'
+    pages: 964--977
+    doi: 10.1046/j.1365-2745.2000.00506.x
+contributors:
+  data_collectors:
+  - last_name: unknown
+    given_name: unknown
+    ORCID: unknown
+    affiliation: unknown
+  assistants: unknown
+  austraits_curators: unknown
+dataset:
+  data_is_long_format: no
+  custom_R_code: .na
+  collection_date: x/x
+  taxon_name: name_original
+  location_name: site_TEXT
+  description: unknown
+  basis_of_record: unknown
+  life_stage: unknown
+  sampling_strategy: unknown
+  original_file: unknown
+  notes: unknown
+locations:
+  Coffs Harbour:
+    longitude (deg): 152.972
+    latitude (deg): -30.321
+    description: wet sclerophyll forest
+    elevation (m): 195.0
+    precipitation, MAP (mm): 2034.0
+    soil P, total (mg/kg): 249.0
+    soil N, total (ppm): 0.39
+    geology (parent material): Devonian - Siliceous argilite, slate, minor siliceous
+      greywacke (Db)
+  Kuringai-Chase NP:
+    longitude (deg): 151.284
+    latitude (deg): -33.586
+    description: heathland
+    elevation (m): 140.0
+    precipitation, MAP (mm): 1231.0
+    soil P, total (mg/kg): 95.0
+    soil N, total (ppm): 0.15
+    geology (parent material): Triassic - Massive quartz sanstone, minor shale lenses
+      (Rh)
+  Morton NP:
+    longitude (deg): 150.336
+    latitude (deg): -34.778
+    description: heathland
+    elevation (m): 315.0
+    precipitation, MAP (mm): 1821.0
+    soil P, total (mg/kg): 42.0
+    soil N, total (ppm): 0.04
+    geology (parent material): Permian - Lithic sandstone, feldspathic sandstone,
+      sandy mudstone, shale, quartz sandstone, conglomerate, pebbly siltstone, latite
+      flows (Ps)
+  Rosewood:
+    longitude (deg): 146.28
+    latitude (deg): -32.948
+    description: woodland
+    elevation (m): 200.0
+    precipitation, MAP (mm): 381.0
+    soil P, total (mg/kg): 196.0
+    soil N, total (ppm): 0.1
+    geology (parent material): Silurian - Feldspathic and lithic greywacke, siltstone,
+      mudstone, argillaceous and quartzitic sandstone, basalt quartz pebble conglomerate
+      (Slc)
+  Tundalya:
+    longitude (deg): 144.834
+    latitude (deg): -30.731
+    description: woodland
+    elevation (m): 90.0
+    precipitation, MAP (mm): 262.0
+    soil P, total (mg/kg): 407.0
+    soil N, total (ppm): 0.07
+    geology (parent material): Quaternary - Alluvial and riverine plain deposits of
+      gravel, sand, silt and clay; claypans and outwash areas of black and red clayed
+      silt and sand; coastal sand dunes and beach deposits (Qa)
+contexts: .na
+traits:
+- var_in: TRAIT Growth Form CATEGORICAL EP epiphyte (mistletoe) F fern G grass H herb
+    S shrub T tree V vine
+  unit_in: .na
+  trait_name: plant_growth_form
+  entity_type: species
+  value_type: mode
+  basis_of_value: expert_score
+  replicates: .na
+  methods: expert observation
+- var_in: TRAIT SLA UNITS mm2/mg
+  unit_in: mm2/mg
+  trait_name: leaf_mass_per_area
+  entity_type: population
+  value_type: mean
+  basis_of_value: measurement
+  replicates: 5
+  methods: Five leaves were collected and pressed for measurements of width, area
+    and SLA. Leaves were taken from full-light situations and, where possible, from
+    random branches on separate individuals (see Westoby 1998, appendix, for discussion
+    of protocols for characterizing leaves and height). Leaf outline images were captured
+    by HP DeskScan II scanner (Hewlett-Packard, Palo Alto, USA) and quantified by
+    Delta-T SCAN image analysis software (Delta-T Devices, Cambridge, UK)
+- var_in: TRAIT Leaf Size UNITS mm2
+  unit_in: mm2
+  trait_name: leaf_area
+  entity_type: population
+  value_type: mean
+  basis_of_value: measurement
+  replicates: 5
+  methods: Five leaves were collected and pressed for measurements of width, area
+    and SLA. Leaves were taken from full-light situations and, where possible, from
+    random branches on separate individuals (see Westoby 1998, appendix, for discussion
+    of protocols for characterizing leaves and height). Leaf outline images were captured
+    by HP DeskScan II scanner (Hewlett-Packard, Palo Alto, USA) and quantified by
+    Delta-T SCAN image analysis software (Delta-T Devices, Cambridge, UK)
+- var_in: TRAIT Leaf Dry Mass UNITS g
+  unit_in: g
+  trait_name: leaf_dry_mass
+  entity_type: population
+  value_type: mean
+  basis_of_value: measurement
+  replicates: 5
+  methods: Five leaves were collected and pressed for measurements of width, area
+    and SLA. Leaves were taken from full-light situations and, where possible, from
+    random branches on separate individuals (see Westoby 1998, appendix, for discussion
+    of protocols for characterizing leaves and height). Leaf outline images were captured
+    by HP DeskScan II scanner (Hewlett-Packard, Palo Alto, USA) and quantified by
+    Delta-T SCAN image analysis software (Delta-T Devices, Cambridge, UK)
+substitutions:
+- trait_name: plant_growth_form
+  find: h
+  replace: herb
+- trait_name: plant_growth_form
+  find: s
+  replace: shrub
+- trait_name: plant_growth_form
+  find: t
+  replace: tree
+- trait_name: plant_growth_form
+  find: ep
+  replace: shrub
+- trait_name: plant_growth_form
+  find: g
+  replace: graminoid
+- trait_name: plant_growth_form
+  find: v
+  replace: climber_herbaceous
+- trait_name: plant_growth_form
+  find: f
+  replace: fern
+taxonomic_updates: .na
+exclude_observations: .na
+questions: .na

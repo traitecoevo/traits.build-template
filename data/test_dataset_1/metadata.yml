@@ -1,0 +1,89 @@
+source:
+  primary:
+    key: Test_1
+    bibtype: Article
+    year: '2005'
+    author: Daniel S. Falster and Mark Westoby
+    journal: Journal of Ecology
+    title: Alternative height strategies among 45 dicot rain forest species from tropical
+      Queensland, Australia
+    volume: '93'
+    number: '3'
+    pages: 521--535
+    doi: 10.1111/j.0022-0477.2005.00992.x
+contributors:
+  data_collectors:
+  - last_name: Falster
+    given_name: Daniel
+    ORCID: 0000-0002-9814-092X
+    affiliation: Evolution & Ecology Research Centre, School of Biological, Earth,
+      and Environmental Sciences, UNSW Sydney, Australia
+    additional_role: contact
+  austraits_curators: Elizabeth Wenk
+dataset:
+  data_is_long_format: no
+  custom_R_code: .na
+  collection_date: 2002-11/2002-11
+  taxon_name: Species
+  location_name: site
+  description: Investigation into trait values correlated with plant height along
+    light availability and successional gradients for far north Queensland species.
+  basis_of_record: field
+  life_stage: adult
+  sampling_strategy: Nineteen species, ranging from early to late successional status,
+    were selected using published sources (Hopkins & Graham 1987; Osunkoya 1996; Hyland
+    et al. 1999). Species selected to represent the light gradient establish and mature
+    in closed forest, where successional species are assumed absent. For inclusion
+    in this set we required that a species was known to establish and persist at low
+    light levels, as indicated either by published sources (Hyland et al. 1999; Osunkoya
+    1996) or by scientists familiar with the vegetation (A Graham, J Wells, CSIRO
+    Atherton; R Jensen). Twenty-six species, experiencing a range of light levels
+    at maturity, from high (canopy trees) to low light (understorey shrubs), were
+    included.
+  original_file: none
+  notes: none
+locations:
+  Atherton:
+    description: Tropical rain forest vegetation
+    latitude (deg): -17.117
+    longitude (deg): 145.65
+  Cape Tribulation:
+    description: Complex mesophyll vine forest in tropical rain forest
+    latitude (deg): -16.1
+    longitude (deg): 145.45
+contexts: .na
+traits:
+- var_in: LMA (mg mm-2)
+  unit_in: mg/mm2
+  trait_name: leaf_mass_per_area
+  entity_type: population
+  value_type: mean
+  basis_of_value: measurement
+  replicates: '3'
+  methods: LMA was calculated as the leaf dry mass (oven-dried for 48 hours at 65
+    deg C) divided by leaf size. It was measured on the first five fully expanded
+    leaves at the tip of each individual.
+- var_in: Leaf nitrogen (mg mg-1)
+  unit_in: mg/mg
+  trait_name: leaf_N_per_dry_mass
+  entity_type: population
+  value_type: mean
+  basis_of_value: measurement
+  replicates: '3'
+  methods: Leaves from all individuals per species were pooled and finely ground for
+    nitrogen analysis. Total nitrogen concentration (%) was measured using complete
+    combustion gas chromatography by Waite Analytical Services, Adelaide. The first
+    five fully expanded leaves at the tip of each individual were used for the analysis.
+- var_in: leaf size (mm2)
+  unit_in: mm2
+  trait_name: leaf_area
+  entity_type: population
+  value_type: mean
+  basis_of_value: measurement
+  replicates: '3'
+  methods: Leaf size was calculated as the one-sided leaf area (flat bed scanner).
+    It was measured on the first five fully expanded leaves at the tip of each individual.
+substitutions: .na
+taxonomic_updates: .na
+exclude_observations: .na
+questions: .na
