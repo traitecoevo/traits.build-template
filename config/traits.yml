@@ -21,7 +21,27 @@ traits:
       units: umol{CO2}/m2/s
       allowed_values_min: 2.0
       allowed_values_max: 65.0
-      entity_URI: https://w3id.org/APD/traits/trait_0020241    
+      entity_URI: https://w3id.org/APD/traits/trait_0020241 
+    leaf_photosynthetic_rate_per_area_saturated:
+      label: Leaf photosynthesis rate per unit leaf area under saturating light and
+        ambient CO2 (Asat)
+      description: The photosynthetic rate [TO:0001015] of plant leaves [PO:0025034]
+        whose photosystem [GO:0009521] I and II reaction centers [GO:0009538; GO:0009539]
+        are exposed to saturating [NCIT:C61427] photosynthetically active radiation
+        [ENVO:01001864] and ambient [NCIT:C62306] atmospheric carbon dioxide [ENVO:01000451;
+        CHEBI:16526] concentrations [PATO:0000033], recorded per unit leaf area [PATO:0001323].;The
+        photosynthetic rate of a leaf exposed to saturating light (photosynthetically
+        active radiation) levels and ambient carbon dioxide concentrations, air temperature
+        and vapour pressure deficit, per unit leaf area; light-saturated photosynthetic
+        rate.
+      comments: Leaf temperature and leaf-to-air vapour pressure deficit should be
+        recorded as context properties. If Tleaf and VPD are not reported, it is assumed
+        measurements are made at typical temperature and VPD conditions for the plant.
+      type: numeric
+      units: umol{CO2}/m2/s
+      allowed_values_min: 0.01
+      allowed_values_max: 50.0
+      entity_URI: https://w3id.org/APD/traits/trait_0020242   
     plant_height:
       label: Plant vegetative height
       description: A whole plant morphology trait [TO:0000398] which is the maximum
@@ -80,6 +100,19 @@ traits:
       allowed_values_min: 0.01
       allowed_values_max: 15000.0
       entity_URI: https://w3id.org/APD/traits/trait_0011216
+    leaf_length:
+      label: Leaf length
+      description: Length [PATO:0000122] of the leaf [PO:0025034] (including the petiole
+        [PO:0020038]), from the leaf apex [PO:0020137] to the leaf axil [PO:0009023]
+        (leaf base [PO:0020040]).;Length of a leaf or a leaf analogue, from the leaf
+        apex to the leaf axil (base), including the petiole.
+      comments: If a leaf analogue (leaflet, cladode, or phyllode) is measured instead
+        of a true leaf, this should be noted as a `context` or under `measurement_remarks`.
+      type: numeric
+      units: mm
+      allowed_values_min: 0.1
+      allowed_values_max: 100000.0
+      entity_URI: https://w3id.org/APD/traits/trait_0011213
     leaf_mass_per_area:
       label: Leaf mass per area
       description: A leaf morphology trait [TO:0000748] which is the ratio [PATO:0001470]
@@ -98,7 +131,17 @@ traits:
       units: g/m2
       allowed_values_min: 1.0
       allowed_values_max: 3000.0
-      entity_URI: https://w3id.org/APD/traits/trait_0011230  
+      entity_URI: https://w3id.org/APD/traits/trait_0011230
+    leaf_C_per_dry_mass:
+      label: Leaf carbon (C) content per unit leaf dry mass
+      description: The ratio [PATO:0001470] of the mass [PATO:0000125] of carbon [CHEBI:27594]
+        in a leaf [PO:0025034] to leaf dry mass [TO:0001014].
+      comments: Includes measurements on leaf analogs, including cladodes and phylloclades.
+      type: numeric
+      units: mg/g
+      allowed_values_min: 50.0
+      allowed_values_max: 750.0
+      entity_URI: https://w3id.org/APD/traits/trait_0000016  
     leaf_N_per_dry_mass:
       label: Leaf nitrogen (N) content per unit leaf dry mass
       description: The ratio [PATO:0001470] of the mass [PATO:0000125] of nitrogen
@@ -109,6 +152,23 @@ traits:
       allowed_values_min: 0.5
       allowed_values_max: 100.0
       entity_URI: https://w3id.org/APD/traits/trait_0000038
+    seed_dry_mass:
+      label: Seed dry mass
+      description: A seed morphology trait [TO:0000184] which is the dry [PATO:0001824]
+        mass [PATO:0000125] of a mature [PATO:0001701] seed [PO:0009010].;Dry mass
+        of a mature seed, including both oven dried and air-dried samples.
+      comments: Standard methods people will have used to dry seeds include, 'fresh'
+        (at dispersal, mature); 'air dried' (at local ambient conditions); 'seed bank
+        air dried' (to 15% relative humidity); and 'oven dried' (>100 deg C for a
+        set number of hours; e.g. seed bank standard is 103 deg C for 17 hours). It
+        is expected that some observations in AusTraits mapped onto â€˜seed_dry_mass'
+        will actually include both the seed and some dispersal tissue, if the two
+        cannot easily be separated; these should be mapped to 'diaspore_dry_mass'.
+      type: numeric
+      units: mg
+      allowed_values_min: 1.0e-05
+      allowed_values_max: 1000000.0
+      entity_URI: https://w3id.org/APD/traits/trait_0012610
     leaf_type:
       label: Leaf type
       description: A leaf shape trait [TO:0000492] which is inclusive [NCIT:C166400]
@@ -127,6 +187,28 @@ traits:
         needle: Needle or awl-shaped leaf that is generally 3-dimensional.
         scale: Leaf reduced to a small scale.
       entity_URI: https://w3id.org/APD/traits/trait_0011310
+    plant_photosynthetic_organ:
+      label: Plant photosynthetic organ
+      description: A plant structure morphology trait [TO:0000839] which is the primary
+        [NCIT:C25251] organ [PO:0009008] or tissue [CARO:0000043] a plant [PO:0000003]
+        uses for photosynthesis [GO:0015979], most commonly a leaf [PO:0025034], cladode
+        [PO:0025354], or phyllode [PO:0025335].;Trait indicating a plant's primary
+        photosynthetic organ or tissue.
+      comments: This trait is not intended to record the presence of primary versus
+        secondary photosynthetic organs; only the primary photosynthetic organ should
+        be keyed in. Many of the allowable values for this trait are frequently included
+        under `leaf type` or `leaf form`. Here, we separate terms pertaining to the
+        general form of the leaf (in the trait `leaf_type`) from those identifying
+        the plant organ responsible for photosynthesis.
+      type: categorical
+      allowed_values_levels:
+        cladode: A photosynthetic shoot, regardless of form, that functions as a leaf.
+          For example, cacti pads and Casuarina articles. (Synonyms, article, phylloclade,
+          cladophyll)
+        leaf: A true leaf, including both laminar and needle-shaped leaves.
+        non-photosynthetic_plant: A plant that lacks any photosynthetic organs.
+        phyllode: A flattened bladelike petiole. (Synonyms, switch plant)
+      entity_URI: https://w3id.org/APD/traits/trait_0030016
     plant_growth_form:
       label: Plant growth form
       description: A whole plant [PO:0000003] phenotype [NCIT:C16977] trait that summarises

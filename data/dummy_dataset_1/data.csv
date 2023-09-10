@@ -1,0 +1,132 @@
+﻿species,growth_form,leaf_type,height_max_cm,leaf_length_min_mm,leaf_length_max_mm,seed_length_min_mm,seed_length_max_mm
+Daviesia anceps,shrub,scale,50,,,,
+Daviesia pachyloma,shrub,phyllode,50,8,65,2.8,3.1
+Daviesia microcarpa,shrub,phyllode,40,8,20,,2
+Daviesia arthropoda,shrub,phyllode,100,20,40,,
+Daviesia acicularis,shrub,phyllode,100,9,42,3.5,4.3
+Daviesia stricta,shrub,phyllode,150,10,100,,4.5
+Daviesia wyattiana,shrub,phyllode,250,40,370,4.1,5.2
+Daviesia arenaria,shrub,phyllode,150,3,10,2.7,3
+Daviesia sejugata,shrub,phyllode,200,15,33,2.5,3
+Daviesia ulicifolia,shrub,phyllode,250,3,22,3.5,4
+Daviesia reclinata,shrub,scale phyllode,100,10,150,,4
+Daviesia bursarioides,shrub,phyllode,200,3,20,4.5,5.2
+Daviesia pleurophylla,shrub,phyllode,300,5,25,,4.7
+Daviesia divaricata,shrub,scale,300,1,1,4.2,4.6
+Daviesia localis,shrub,phyllode,300,2,8,6,7
+Daviesia longifolia,shrub,phyllode,70,,250,,3.5
+Daviesia pauciflora,shrub,phyllode,80,,400,,4.25
+Daviesia costata,shrub,phyllode,70,1,300,,
+Daviesia implexa,shrub,phyllode,100,5,100,,4
+Daviesia elongata,shrub,phyllode,100,40,170,,4
+Daviesia alternifolia,shrub,phyllode,35,25,50,,
+Daviesia oppositifolia,shrub,phyllode,200,37,122,,4
+Daviesia cordata,shrub,phyllode,150,35,150,5,5.5
+Daviesia crenulata,shrub,phyllode,80,15,31,,4
+Daviesia ovata,shrub,phyllode,180,28,77,,
+Daviesia croniniana,shrub,scale phyllode,200,28,50,,
+Daviesia lineata,shrub,phyllode,250,30,110,,
+Daviesia rhombifolia,shrub,phyllode,60,8,30,,
+Daviesia pedunculata,shrub,phyllode,60,10,28,,5
+Daviesia audax,shrub,phyllode,200,25,65,7.5,8
+Daviesia lancifolia,shrub,phyllode,50,7,17,,
+Daviesia mollis,shrub,phyllode,100,9,27,3.9,4.3
+Daviesia spiralis,shrub,phyllode,150,,100,3,4
+Daviesia uniflora,shrub,phyllode,70,7,13,3,4
+Daviesia cardiophylla,shrub,phyllode,150,6,13,3.7,4.7
+Daviesia umbonata,shrub,phyllode,100,10,20,3.8,4
+Daviesia cunderdin,shrub,phyllode,160,10,20,,
+Daviesia euryloba,shrub,phyllode,150,7,18,,3.9
+Daviesia abnormis,shrub,phyllode,70,13,23,3.5,4
+Daviesia nudiflora,shrub,phyllode,250,4,50,4,5.5
+Daviesia grahamii,shrub,scale phyllode,50,0.1,50,,
+Daviesia newbeyi,shrub,phyllode,150,5,40,,
+Daviesia alata,shrub,scale,5,,,2.5,2.7
+Daviesia corymbosa,shrub,phyllode,200,20,120,2.8,4.4
+Daviesia flava,shrub,phyllode,200,30,130,2,2.2
+Daviesia suaveolens,shrub tree,phyllode,600,30,100,3,3.5
+Daviesia buxifolia,shrub,phyllode,200,3,30,,3.5
+Daviesia mimosoides,shrub tree,phyllode,200,15,200,2.5,3
+Daviesia leptophylla,shrub,phyllode leafless,150,0.1,90,2.5,3.5
+Daviesia ellipticala,shrub,phyllode,150,6,50,,2.9
+Daviesia latifolia,shrub,phyllode,300,20,150,2.5,3.7
+Daviesia laxiflora,shrub tree,phyllode,1000,40,160,2.4,3.3
+Daviesia laevis,shrub,phyllode,400,40,150,2.5,3.2
+Daviesia arborea,shrub tree,phyllode,1400,40,200,,
+Daviesia discolor,shrub,phyllode,200,40,160,,
+Daviesia squarrosa,shrub,phyllode,150,4,12,3.1,3.4
+Daviesia villifera,shrub,phyllode,200,5,10,,3.6
+Daviesia quoquoversus,shrub,phyllode,200,6,9,,
+Daviesia filipes,shrub,phyllode,150,9,19,3.2,4
+Daviesia pubigera,shrub,phyllode,200,5,14,4.6,5
+Daviesia nova-anglica,shrub,phyllode,100,5,14,,
+Daviesia umbellulata,shrub,phyllode,100,7,30,,
+Daviesia asperula,shrub,phyllode,200,5,25,3.3,4
+Daviesia oxylobium,shrub,phyllode,100,20,70,,4
+Daviesia pectinata,shrub,phyllode,250,8,70,3.5,4
+Daviesia eremaea,shrub,phyllode,200,40,120,,
+Daviesia argillacea,shrub,phyllode,200,7,22,,
+Daviesia scoparia,shrub,scale,200,,,,
+Daviesia nematophylla,shrub,phyllode,200,12,80,,
+Daviesia subulata,shrub,phyllode,160,4,12,2.5,3
+Daviesia purpurascens,shrub,phyllode,100,5,50,,
+Daviesia benthamii,shrub,phyllode,100,10,80,,
+Daviesia schwarzenegger,shrub,phyllode,130,10,25,,
+Daviesia aphylla,shrub,phyllode scale,200,0.1,15,2,3
+Daviesia campephylla,shrub,phyllode,35,6,16,,3.25
+Daviesia articulata,shrub,phyllode,100,3,40,,
+Daviesia scabrella,shrub,phyllode,50,5,25,,
+Daviesia genistifolia,shrub,phyllode,200,5,30,3,4.5
+Daviesia devito,shrub,phyllode,100,5,30,,2.8
+Daviesia horrida,shrub,phyllode,180,18,130,,5
+Daviesia megacalyx,shrub,phyllode,150,40,80,,5
+Daviesia obovata,shrub,phyllode,150,55,90,,5
+Daviesia rubiginosa,shrub,phyllode,200,30,250,,
+Daviesia epiphyllum,shrub,phyllode scale,150,3,12,3,4
+Daviesia speciosa,shrub,phyllode scale,80,15,80,,3.5
+Daviesia major,shrub,phyllode,70,0.1,200,,3.5
+Daviesia debilior,shrub,scale,60,0.1,120,,3.5
+Daviesia gracilis,shrub,scale,50,,,,
+Daviesia triflora,shrub,scale,60,,,,4
+Daviesia pseudaphylla,shrub,phyllode,35,,300,,
+Daviesia hakeoides,shrub,phyllode,100,0.1,80,,
+Daviesia smithiorum,shrub,phyllode,50,10,50,,
+Daviesia pteroclada,shrub,scale,180,,,3.6,4.7
+Daviesia sarissa,shrub,phyllode,50,10,80,,
+Daviesia decurrens,shrub,phyllode,180,2,45,4,4.6
+Daviesia intricata,shrub,phyllode scale,200,20,40,,
+Daviesia retrorsa,shrub,phyllode,160,5,50,3.5,4
+Daviesia flexuosa,shrub,phyllode,250,5,43,,4
+Daviesia decipiens,shrub,phyllode,180,5,25,,
+Daviesia trigonophylla,shrub,phyllode,100,3,15,,
+Daviesia dilatata,shrub,phyllode,100,7,50,,
+Daviesia uncinata,shrub,phyllode,70,5,70,,4
+Daviesia daphnoides,shrub,phyllode,150,25,68,,
+Daviesia emarginata,shrub,phyllode,170,24,50,,
+Daviesia tortuosa,shrub,phyllode,100,10,35,,4
+Daviesia brevifolia,shrub,phyllode scale,180,2,8,2.9,4.2
+Daviesia brachyphylla,shrub,phyllode,80,1.5,30,3.7,4.5
+Daviesia incrassata,shrub,phyllode,100,5,15,,
+Daviesia physodes,shrub,phyllode,180,,55,3.3,4.5
+Daviesia inflata,shrub,phyllode,100,5,80,,5
+Daviesia glossosema,shrub,phyllode,100,8,40,,
+Daviesia podophylla,shrub,phyllode,100,,25,,3
+Daviesia quadrilatera,shrub,phyllode,120,17,21,,
+Daviesia ramosissima,shrub,phyllode,120,5,43,,
+Daviesia apiculata,shrub,phyllode,150,25,60,,5
+Daviesia teretifolia,shrub,phyllode,120,17,47,,
+Daviesia grossa,shrub,phyllode,300,25,55,4.7,6.3
+Daviesia mesophylla,shrub,phyllode,5,7,15,3.5,4
+Daviesia microphylla,shrub,phyllode,60,2.5,5,,
+Daviesia oxyclada,shrub,phyllode,60,5,10,,
+Daviesia dielsii,shrub,phyllode,100,2,4,,
+Daviesia polyphylla,shrub,phyllode,60,5,20,3.5,4
+Daviesia angulata,shrub,phyllode,120,10,35,,4
+Daviesia preissii,shrub,phyllode,100,10,40,,3.3
+Daviesia spinosissima,shrub,phyllode,180,7,15,,
+Daviesia striata,shrub,phyllode,120,7,16,,
+Daviesia chapmanii,shrub,phyllode,80,10,15,,3
+Daviesia crassa,shrub,phyllode,180,10,40,,
+Daviesia pachyphylla,shrub,phyllode,150,12,27,,
+Daviesia euphorbioides,subshrub,phyllode,80,0.5,2.5,,
+Daviesia rhizomata,shrub,phyllode,,4,45,,

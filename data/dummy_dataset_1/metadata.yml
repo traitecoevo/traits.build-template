@@ -1,0 +1,115 @@
+source:
+  primary:
+    key: Crisp_2017
+    bibtype: Article
+    author: Michael D. Crisp, Lindy Cayzer, Gregory T. Chandler, Lyn G. Cook
+    year: 2017
+    title: A monograph of Daviesia (Mirbelieae, Faboideae, Fabaceae)
+    journal: Phytotaxa
+    volume: 300
+    pages: 1-308
+    doi: 10.11646/phytotaxa.300.1.1
+contributors:
+  data_collectors:
+  - last_name: Crisp
+    given_name: Michael
+    ORCID: 0000-0002-8255-6349
+    affiliation: The Australian National University, Australia
+    additional_role: contact
+  austraits_curators: Elizabeth Wenk
+dataset:
+  data_is_long_format: no
+  custom_R_code: .na
+  collection_date: 1984/2017
+  taxon_name: species
+  description: transcribed from 'A monograph of Daviesia (Mirbelieae, Faboideae, Fabaceae)'
+  basis_of_record: preserved_specimen
+  life_stage: adult
+  sampling_strategy: herbarium and field censuses
+  original_file: transcribed from manuscript
+  notes: Scattered duplicates with many of the large datasets from herbaria, NTH_2014,
+    RBGSYD_2014_2, SAH_2014, Wheeler_2002, but nothing has been filtered out, because
+    no consistent patterns, suggesting same measurements used by multiple sources.
+locations: .na
+contexts: .na
+traits:
+- var_in: growth_form
+  unit_in: .na
+  trait_name: plant_growth_form
+  entity_type: species
+  value_type: mode
+  basis_of_value: expert_score
+  replicates: .na
+  methods: field observations and information on herbarium sheets
+- var_in: height_max_cm
+  unit_in: cm
+  trait_name: plant_height
+  entity_type: species
+  value_type: maximum
+  basis_of_value: measurement
+  replicates: .na
+  methods: herbarium collections
+- var_in: leaf_type
+  unit_in: .na
+  trait_name: plant_photosynthetic_organ
+  entity_type: species
+  value_type: mode
+  basis_of_value: expert_score
+  replicates: .na
+  methods: herbarium collections
+- var_in: leaf_length_min_mm
+  unit_in: mm
+  trait_name: leaf_length
+  entity_type: species
+  value_type: minimum
+  basis_of_value: measurement
+  replicates: .na
+  methods: herbarium collections
+- var_in: leaf_length_max_mm
+  unit_in: mm
+  trait_name: leaf_length
+  entity_type: species
+  value_type: maximum
+  basis_of_value: measurement
+  replicates: .na
+  methods: herbarium collections
+- var_in: seed_length_min_mm
+  unit_in: mm
+  trait_name: seed_length
+  entity_type: species
+  value_type: minimum
+  basis_of_value: measurement
+  replicates: .na
+  methods: herbarium collections
+- var_in: seed_length_max_mm
+  unit_in: mm
+  trait_name: seed_length
+  entity_type: species
+  value_type: maximum
+  basis_of_value: measurement
+  replicates: .na
+  methods: herbarium collections
+substitutions:
+- trait_name: plant_photosynthetic_organ
+  find: scale
+  replace: cladode
+- trait_name: plant_photosynthetic_organ
+  find: scale phyllode
+  replace: cladode phyllode
+- trait_name: plant_photosynthetic_organ
+  find: phyllode scale
+  replace: cladode phyllode
+- trait_name: plant_photosynthetic_organ
+  find: phyllode leafless
+  replace: phyllode
+taxonomic_updates:
+- find: Daviesia ellipticala
+  replace: Daviesia elliptica
+  reason: match_07_fuzzy. Fuzzy alignment with accepted canonical name in APC (2022-11-10)
+  taxonomic_resolution: Species
+- find: Daviesia euryloba
+  replace: Daviesia eurylobos
+  reason: match_07_fuzzy. Fuzzy alignment with accepted canonical name in APC (2022-11-12)
+  taxonomic_resolution: Species
+exclude_observations: .na
+questions: .na
