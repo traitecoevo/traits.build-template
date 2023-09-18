@@ -41,7 +41,38 @@ traits:
       units: umol{CO2}/m2/s
       allowed_values_min: 0.01
       allowed_values_max: 50.0
-      entity_URI: https://w3id.org/APD/traits/trait_0020242   
+      entity_URI: https://w3id.org/APD/traits/trait_0020242
+    water_potential_predawn:
+      label: Pre-dawn water potential
+      description: The shoot system [PO:0009006] water potential [EnvThes:22311] just
+        before sunrise, a proxy for soil water potential [EnvThes:22283] and representing
+        the plant's daily maximum [NCIT:C25564] (least negative) water potential.;The
+        water potential of a plant's shoot system just before sunrise, a proxy for
+        soil water potential and the plant's highest (least negative) water potential
+        for the day.
+      comments: Predawn water potential is often assumed to equal the soil water potential,
+        but the plant's water potential does not necessarily equilibrate with soil
+        water potential overnight. It is therefore better considered a "proxy" of
+        soil water potential.
+      type: numeric
+      units: MPa
+      allowed_values_min: -20.0
+      allowed_values_max: 0.0
+      entity_URI: https://w3id.org/APD/traits/trait_0021030
+    water_potential_midday:
+      label: Midday water potential
+      description: The average water potential [EnvThes:22311] of a plant's leaf [PO:0025034]
+        and shoot [PO:0009006] mesophyll [PO:0006070] tissue [CARO:0000043] during
+        maximum midday transpiration [ENVO:02500035] and assumed to be the plant's
+        daily minimum [NCIT:C25570] water potential.;The water potential of a plant's
+        leaf or shoot photosynthetic tissue during maximum midday transpiration, the
+        time of day when the plant is most water stressed and has the lowest (most
+        negative) water potential.
+      type: numeric
+      units: MPa
+      allowed_values_min: -20.0
+      allowed_values_max: 0.0
+      entity_URI: https://w3id.org/APD/traits/trait_0021031   
     plant_height:
       label: Plant vegetative height
       description: A whole plant morphology trait [TO:0000398] which is the maximum
@@ -295,6 +326,45 @@ traits:
         tussock: A subcategory of graminoid, which is a plant where many shoots from
           the basal meristem form prominent tufts.
       entity_URI: https://w3id.org/APD/traits/trait_0030010
+    life_form:
+      label: Life form
+      description: Raunkiaer classification of life form, which is a feature of the
+        whole plant [PO:0000003] defining the position [PATO:0000140] of the perennating
+        meristematic tissue [PO:0006079] (buds [PO:0000055] or shoot apices [PO:0000037])
+        on the shoot system [PO:0009006], their distance [PATO:0000040] to the ground
+        surface [sweetontology.net/realmSoil/Ground] and the protection afforded to
+        survive the unfavourable season, or the production of seeds [PO:0009010] to
+        avoid the unfavourable season.;Raunkiaer classification of life form, indicating
+        the location of and protection provided to surviving meristematic tissue (buds)
+        during the unfavourable (cold or dry) season.
+      type: categorical
+      allowed_values_levels:
+        aerophyte: Plant that obtains moisture and nutrients from the air and rain,
+          resting on other plants or the ground surface.
+        chamaephyte: Plant whose perennating buds are on persistent shoots that do
+          not extend more than 50 cm above the soil surface. These are normally woody
+          perennials.
+        cryptophyte: Plant whose perennating buds are subterranean or under water.
+          This grouping can be further divided into geophyte, helophyte, and hydrophyte.
+        epiphyte: Plant that grows on the surface of another plant.
+        geophyte: Plant that perennates as an organ (rhizome, bulb, corm, or tuber)
+          buried in dry soil, with all leaves dying back each year; a subcategory
+          of cryptophyte.
+        helophyte: Plant that perennates as an organ (rhizome, bulb, corm, or tuber)
+          buried in marshy or wet soil or lying under water, with buds emerging during
+          the growing season and shoots and leaves rising about the water surface;
+          a subcategory of cryptophyte. (Synonyms, emergent_hydrophyte)
+        hemicryptophyte: Plant whose perennating buds are at or near the soil surface.
+        hydrophyte: Plant that perennates as buds or as an organ (rhizome, bulb, corm,
+          or tuber) buried in marshy or wet soil or lying under water, with shoots
+          emerging during the growing season that remain below or at the water surface;
+          a subcategory of cryptophyte.
+        phanerophyte: Plant whose perennating buds are on persistent shoots which
+          rise at least 50 cm above the soil surface. These are normally woody perennials.
+        therophyte: Annual plants whose shoot and root systems die completely at the
+          end of flowering and seed production, such that they survive the unfavourable
+          cold or dry season in the form of seeds.
+      entity_URI: https://w3id.org/APD/traits/trait_0030011
     leaf_phenology:
       label: Leaf phenology
       description: A whole plant [PO:0000003] phenotype [NCIT:C16977] trait characterising
@@ -319,3 +389,24 @@ traits:
         semi_deciduous: Plant thins, but does not entirely lose, its leaf canopy in
           response to an environmental cue, usually drought.
       entity_URI: https://w3id.org/APD/traits/trait_0030024
+    leaf_stomatal_density_abaxial:
+      label: Stomatal density on the lower leaf surface
+      description: A leaf stomatal complex frequency trait [TO:0000566] which is the
+        ratio [PATO:0001470] of the count [NCIT:C25463] of stomata [PO:0008032] on
+        the abaxial [PATO:0002046] (lower) leaf lamina [PO:0020039] to the leaf lamina
+        area [PATO:0001323].;Density of stomata on the lower leaf surface.
+      type: numeric
+      units: '{count}/mm2'
+      allowed_values_min: 1.0
+      allowed_values_max: 1000.0
+      entity_URI: https://w3id.org/APD/traits/trait_0011610
+    leaf_stomatal_density_adaxial:
+      label: Stomatal density on the upper leaf surface
+      description: A leaf stomatal complex frequency trait [TO:0000566] which is the
+        ratio [PATO:0001470] of the count [NCIT:C25463] of stomata [PO:0008032] on
+        the adaxial [PATO:0002047] (upper) leaf lamina [PO:0020039] to the leaf lamina
+        area [PATO:0001323].;Density of stomata on the upper leaf surface.
+      type: numeric
+      units: '{count}/mm2'
+      allowed_values_min: 0.0
+      allowed_values_max: 1000.0

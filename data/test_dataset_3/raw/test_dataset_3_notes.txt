@@ -1,0 +1,113 @@
+Test_dataset_3
+(derived from Farrell_2013 in AusTraits)
+
+reference doi: 10.1007/s11104-013-1725-x
+data_collector: Claire Farrell, University of Melbourne, Australia
+collection_date: 2011-02/2011-03
+description: A study to determine whether granite outcrop species could improve
+    green roof performance by evaluating water use strategies under contrasting water
+    availability.
+basis_of_record: lab
+life_stage: adult
+sampling_strategy: Species selection ^p   Twelve species which grow on granite outcrops
+    in southeastern Australia (chosen from Victorian Ecological Vegetation Class (EVC)
+    characteristic species lists) along with a succulent commonly used on green roofs
+    (Sedum pachyphyllum) were selected for this study. The 12 granite outcrop species
+    were from three life-forms, 4 grasslike monocots; 4 herbs and 4 small shrubs (Table
+    1). They were obtained as six-month old seedlings from a commercial nursery; while
+    S. pachyphyllum was propagated from cuttings and grown for 6 months. In early
+    summer (December), 20 plants of uniform size of each species were planted into
+    4 L black plastic pots (200 mm diameter, 190mmheight) containing 4.4 kg (added
+    by weight) of a scoria-based green roof substrate (60%aerolite black scoria 7
+    mm minus block mix; 20 % 7 mm red scoria aggregate and 20%coir). The scoria substrate
+    has a water holding capacity of 46 % and a bulk density of 1.26 g cm-3 (Farrell
+    et al. 2013). Twelve grams of low phosphorous slow release fertiliser (Osmocote
+    plus, Scotts Australia Pty Ltd.; 16 nitrogen (N):1.3 phosphorus (P):9.1 potassium
+    (K)) was added to the surface of each pot 1 month post-planting. Plants were grown
+    in a glasshouse at the Burnley Campus, University of Melbourne. Glasshouse temperatures
+    ranged from 9 to 42.5 degC, with an average temperature of 18.7 degC during the
+    experiment. All plants were watered to pot capacity twice a week prior to the
+    start of the experiment. ^p   Experimental design ^p    The experiment ran for
+    50 days, commencing on the 7th of February (Mid-summer) and finishing on the 28th
+    of March (Mid-autumn), 2011. Five plants of each species were randomly allocated
+    to two treatments, well watered (WW) and water deficit (WD). An additional 10
+    substrate-only pots were used to determine evaporation rates from WW and WD treatments
+    during the experiment (5 pots per treatment). Pots were arranged in a complete
+    randomised block design (5 blocks). All plants were watered twice weekly (Monday
+    and Thursday). WW plants were watered to pot capacity (2 L per pot) while the
+    WD treatment was watered with 20 % of the water used by well watered plants (determined
+    gravimetrically) in the 3- 4 days preceding each watering event. This WD treatment
+    was designed to stress each species relative to its well watered control and was
+    used in preference to a terminal drought treatment to allow sufficient time for
+    each species to adjust both physiological and morphological traits to low water
+    availability.
+
+locations:
+  The University of Melbourne Burnley campus:
+    latitude (deg): -37.828472
+    longitude (deg): 145.020883
+    description: temperature controlled glasshouse
+
+
+traits methods:
+
+- var_in: life_form
+  methods: literature sourced and expert opinion
+- var_in: WP leaf (Mpa) predawn
+  methods: Plants received their final watering event mid-morning on day 50. Pre-dawn
+    (PD) andmidday (MD) leaf water potential were determined the following day (Day
+    51) on five replicates of each species from WWand WD treatments. Leaf water potentials
+    of fully-expanded leaves were measured using a Scholander-type pressure chamber
+    (Soilmoisture Equipment Corp., Santa Barbara, CA, USA). Due to short petiole lengths,
+    some water potentials were measured on apical branches with 2-3 leaves.Some difficulty
+    was encountered in identifying the balancing pressure for Isotoma axillaris and
+    Arthropodium milleflorum due to production of latex (I. axillaris) or mucilage
+    (A. milleflorum) from the cut surface. Applying pressure as per normal confused
+    the signal between expression of wound-response fluid and the water column. This
+    was overcome by maintaining the section at a low pressure (0.1 MPa) in the chamber
+    to promote expression of wound-response fluid. Once all fluids were expressed
+    and wiped from the cut surface (which generally took <1 min), pressure in the
+    chamber was then increased as per normal to reach the balancing point. Leaf water
+    potential measurements of S. pachyphyllum were not captured in this experiment
+    due to high leaf succulence.
+- var_in: WP leaf (Mpa) midday
+  methods: Plants received their final watering event mid-morning on day 50. Pre-dawn
+    (PD) andmidday (MD) leaf water potential were determined the following day (Day
+    51) on five replicates of each species from WWand WD treatments. Leaf water potentials
+    of fully-expanded leaves were measured using a Scholander-type pressure chamber
+    (Soilmoisture Equipment Corp., Santa Barbara, CA, USA). Due to short petiole lengths,
+    some water potentials were measured on apical branches with 2-3 leaves.Some difficulty
+    was encountered in identifying the balancing pressure for Isotoma axillaris and
+    Arthropodium milleflorum due to production of latex (I. axillaris) or mucilage
+    (A. milleflorum) from the cut surface. Applying pressure as per normal confused
+    the signal between expression of wound-response fluid and the water column. This
+    was overcome by maintaining the section at a low pressure (0.1 MPa) in the chamber
+    to promote expression of wound-response fluid. Once all fluids were expressed
+    and wiped from the cut surface (which generally took <1 min), pressure in the
+    chamber was then increased as per normal to reach the balancing point. Leaf water
+    potential measurements of S. pachyphyllum were not captured in this experiment
+    due to high leaf succulence.
+- var_in: LMA kg/m2
+  methods: At the start of the experiment, 5 plants of each species were harvested
+    to determine initial biomass (root, stem and leaf mass) and leaf area. At the
+    conclusion of the experiment, on the 30 March all WW and WD plants were harvested
+    to determine total plant, leaf, stem and root masses. Leaf areas on a subsample
+    of leaves of all species were measured using a LI3100 area meter (Li-Cor, Lincoln,
+    NE, USA). Dry weights were determined after oven drying samples at 70 deg C for
+    1 week (until a constant weight was reached). Dry weights and leaf areas were
+    used to determine root mass fraction (RMF, g root g-1 total plant), leaf area
+    ratio (LAR, m2 leaf kg-1 plant) and specific leaf area (SLA m2 kg-1 leaf).
+- var_in: Stomatal density Upper surface
+  methods: Methods are a modification of Galmes et al 2007 (Plant and Soil) where
+    fully exposed mature leaves were measured from each plant by taking nail polish
+    impressions of both leaf surfaces which were mounted on glass slides. The number
+    of stomata were counted with a microscope at 400 x magnification on four different
+    vision fields of each leaf (both upper and lower surfaces) of five different well-watered
+    plants per species.
+- var_in: Stomatal density Lower surface
+  methods: Methods are a modification of Galmes et al 2007 (Plant and Soil) where
+    fully exposed mature leaves were measured from each plant by taking nail polish
+    impressions of both leaf surfaces which were mounted on glass slides. The number
+    of stomata were counted with a microscope at 400 x magnification on four different
+    vision fields of each leaf (both upper and lower surfaces) of five different well-watered
+    plants per species.
