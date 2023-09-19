@@ -1,4 +1,4 @@
-Test_dataset_3
+Tutorial_dataset_3
 (derived from Farrell_2013 in AusTraits)
 
 reference doi: 10.1007/s11104-013-1725-x

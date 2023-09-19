@@ -1,4 +1,4 @@
-Test_dataset_1
+tutorial_dataset_1
 (derived from Falster_2005_1 in AusTraits)
 
 reference doi: 10.1111/j.0022-0477.2005.00992.x
