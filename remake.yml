@@ -37,41 +37,41 @@ targets:
   taxon_list:
     command: read_csv_char("config/taxon_list.csv")
 
-  dummy_dataset_1_config:
+  example_dataset_1_config:
     command: >
-      dataset_configure("data/dummy_dataset_1/metadata.yml",
+      dataset_configure("data/example_dataset_1/metadata.yml",
                  definitions,
                  unit_conversions
                  )
-  dummy_dataset_1_raw:
+  example_dataset_1_raw:
     command: >
-      dataset_process("data/dummy_dataset_1/data.csv",
-                  dummy_dataset_1_config,
+      dataset_process("data/example_dataset_1/data.csv",
+                  example_dataset_1_config,
                   schema,
                   resource_metadata
                  )
-  dummy_dataset_1:
+  example_dataset_1:
     command: >
-      build_update_taxonomy(dummy_dataset_1_raw,
+      build_update_taxonomy(example_dataset_1_raw,
                   taxon_list
                  )
 
-  dummy_dataset_2_config:
+  example_dataset_2_config:
     command: >
-      dataset_configure("data/dummy_dataset_2/metadata.yml",
+      dataset_configure("data/example_dataset_2/metadata.yml",
                  definitions,
                  unit_conversions
                  )
-  dummy_dataset_2_raw:
+  example_dataset_2_raw:
     command: >
-      dataset_process("data/dummy_dataset_2/data.csv",
-                  dummy_dataset_2_config,
+      dataset_process("data/example_dataset_2/data.csv",
+                  example_dataset_2_config,
                   schema,
                   resource_metadata
                  )
-  dummy_dataset_2:
+  example_dataset_2:
     command: >
-      build_update_taxonomy(dummy_dataset_2_raw,
+      build_update_taxonomy(example_dataset_2_raw,
                   taxon_list
                  )
 
@@ -79,8 +79,8 @@ targets:
   austraits_raw:
     command: >
       build_combine(
-        dummy_dataset_1,
-        dummy_dataset_2,
+        example_dataset_1,
+        example_dataset_2,
         NULL)
     
   austraits:
