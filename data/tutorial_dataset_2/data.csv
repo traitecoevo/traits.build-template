@@ -1,0 +1,201 @@
+﻿site_TEXT,name_original,TRAIT Growth Form CATEGORICAL EP epiphyte (mistletoe) F fern G grass H herb S shrub T tree V vine,TRAIT SLA UNITS mm2/mg,TRAIT Leaf Size UNITS mm2,TRAIT Leaf Dry Mass UNITS g
+Coffs Harbour,Acacia longissima,S,6.4,283.6,0.044
+Coffs Harbour,Allocasuarina torulosa,T,6,70.1,0.012
+Coffs Harbour,Alpinia caerulea,H,12.4,12971.7,1.045
+Coffs Harbour,Archirhodomyrtus beckleri,T,13.2,864,0.066
+Coffs Harbour,Archontophoenix cunninghamiana,T,11.1,11408.6,1.031
+Coffs Harbour,Blechnum cartilagineum,F,16,791.7,0.05
+Coffs Harbour,Breynia oblongifolia,S,17.2,628.1,0.037
+Coffs Harbour,Callicoma serratifolia,T,15.8,2725.7,0.172
+Coffs Harbour,Cissus hypoglauca,V,15.8,2875.6,0.182
+Coffs Harbour,Clematis aristata,V,30.8,3407,0.111
+Coffs Harbour,Cordyline congesta,G,10.3,3235.5,0.314
+Coffs Harbour,Cryptocarya glaucescens,S,9.8,3270.6,0.335
+Coffs Harbour,Cryptocarya microneura,S,9.9,2685.5,0.271
+Coffs Harbour,Desmodium varians,T,23,81.1,0.004
+Coffs Harbour,Dianella caerulea,H,10.5,1159.6,0.111
+Coffs Harbour,Dioscorea transversa,V,51.6,1277.7,0.025
+Coffs Harbour,Elaeocarpus reticulatus,T,9.3,2005.8,0.216
+Coffs Harbour,Eucalyptus sp,T,10.8,2342.7,0.217
+Coffs Harbour,Eupomatia laurina,T,14.4,3463.9,0.24
+Coffs Harbour,Ficus coronata,S,15.6,3671.6,0.235
+Coffs Harbour,Geitonoplesium cymosum,V,25.8,904.1,0.035
+Coffs Harbour,Glycine clandestina,V,40.6,94.3,0.002
+Coffs Harbour,Gymnostachys anceps,,5,4902.9,0.973
+Coffs Harbour,Hibbertia scandens,V,18,2316.2,0.129
+Coffs Harbour,Imperata cylindrica,G,11.6,819.7,0.071
+Coffs Harbour,Lantana camara,V,19,2749.1,0.145
+Coffs Harbour,Lobelia trigonocaulis,H,46.8,322.6,0.007
+Coffs Harbour,Lomandra longifolia,G,2.5,1954.1,0.789
+Coffs Harbour,Parsonsia straminea,V,12.2,5003,0.41
+Coffs Harbour,Psychotria loniceroides,S,14.3,1918.4,0.135
+Coffs Harbour,Pteridium esculentum,F,10.8,572.8,0.053
+Coffs Harbour,Ripogonum fawcettianum,V,10.4,466.8,0.045
+Coffs Harbour,Rubus hillii,V,20.3,1684.2,0.083
+Coffs Harbour,Smilax australis,V,8,3999.8,0.502
+Coffs Harbour,Smilax glyciphylla,V,13.7,1283.2,0.094
+Coffs Harbour,Solanum sp,,20.9,1055.8,0.051
+Coffs Harbour,Stephania japonica,V,26,2211.6,0.085
+Coffs Harbour,Syncarpia glomulifera,T,10,1357.2,0.136
+Coffs Harbour,Synoum glandulosum,S,10.1,1900.4,0.188
+Coffs Harbour,Viola hederacea,H,33,188.2,0.006
+Coffs Harbour,Wilkiea huegeliana,S,10.2,2012.1,0.196
+Kuringai-Chase NP,Acacia brownii/ulicifolia,,4,3.2,0.001
+Kuringai-Chase NP,Acacia suaveolens,S,2.5,246.4,0.098
+Kuringai-Chase NP,Actinotus minor,H,2.9,18.8,0.007
+Kuringai-Chase NP,Allocasuarina distyla,S,1,83.5,0.087
+Kuringai-Chase NP,Allocasuarina littoralis,T,2.5,20.8,0.008
+Kuringai-Chase NP,Baeckea brevifolia,S,2.9,0.7,0
+Kuringai-Chase NP,Banksia ericifolia,S,3.8,11.7,0.003
+Kuringai-Chase NP,Boronia pinnata,S,4.6,12.1,0.003
+Kuringai-Chase NP,Brachyloma daphnoides,S,5,14,0.003
+Kuringai-Chase NP,Dillwynia floribunda,S,2.9,8.7,0.003
+Kuringai-Chase NP,Entolasia stricta,G,3.4,32.5,0.009
+Kuringai-Chase NP,Eucalyptus gummifera,T,4.8,2642.6,0.554
+Kuringai-Chase NP,Eucalyptus umbra,T,2.9,2905.2,0.992
+Kuringai-Chase NP,Goodenia bellidifolia,H,2.4,86.3,0.036
+Kuringai-Chase NP,Grevillea buxifolia,S,5.9,49.1,0.008
+Kuringai-Chase NP,Grevillea speciosa,S,5.8,45.3,0.008
+Kuringai-Chase NP,Hakea sericea,S,1.3,25.2,0.019
+Kuringai-Chase NP,Hakea teretifolia,S,1.4,55.1,0.039
+Kuringai-Chase NP,Hibbertia bracteata,S,5.9,73.8,0.013
+Kuringai-Chase NP,Hibbertia linearis,S,5.5,19.3,0.004
+Kuringai-Chase NP,Isopogon anethifolius,S,2.6,10.2,0.004
+Kuringai-Chase NP,Lambertia formosa,S,3,103.4,0.034
+Kuringai-Chase NP,Lepidosperma laterale,G,2.7,1152.7,0.42
+Kuringai-Chase NP,Leptospermum parvifolium,S,6.2,2.5,0
+Kuringai-Chase NP,Leptospermum sp,S,6,16.6,0.003
+Kuringai-Chase NP,Leptospermum trinervium,S,6.7,23.2,0.003
+Kuringai-Chase NP,Leucopogon microphyllus,S,5.8,2.9,0.001
+Kuringai-Chase NP,Lomandra glauca,G,3,49,0.016
+Kuringai-Chase NP,Lomandra sp,G,1.5,139.1,0.092
+Kuringai-Chase NP,Micrantheum ericoides,S,5.8,4.5,0.001
+Kuringai-Chase NP,Oplismenus imbecillis,G,4.7,51.5,0.011
+Kuringai-Chase NP,Patersonia glabrata,,3.6,263.1,0.073
+Kuringai-Chase NP,Patersonia sericea,,2.3,546.8,0.239
+Kuringai-Chase NP,Phyllota phylicoides,S,7.3,10.5,0.001
+Kuringai-Chase NP,Platysace linearifolia,S,5.8,8.6,0.001
+Kuringai-Chase NP,Ptilanthelium deusteum,,2.5,28.8,0.012
+Kuringai-Chase NP,Pultenaea elliptica,S,10,12.4,0.001
+Kuringai-Chase NP,Schoenus imberbis,,3,27.1,0.009
+Kuringai-Chase NP,Tetratheca ericifolia,S,4.1,2.8,0.001
+Kuringai-Chase NP,Woollsia pungens,S,9.6,22.1,0.002
+Kuringai-Chase NP,Xanthorrhoea media,S,2,359.4,0.183
+Kuringai-Chase NP,Zieria laevigata,S,2.8,16.6,0.006
+Morton NP,Actinotus minor,H,11.2,75.9,0.007
+Morton NP,Allocasuarina sp,T,4.6,41.6,0.009
+Morton NP,Anisopogon avenaceus,G,4.6,286.1,0.063
+Morton NP,Baeckea diosmifolia,S,7.3,5.6,0.001
+Morton NP,Banksia oblongifolia,S,4.8,1733.6,0.361
+Morton NP,Banksia spinulosa,S,4.1,67.5,0.016
+Morton NP,Bossiaea ensata,S,6.6,8.4,0.001
+Morton NP,Bossiaea obcordata,S,8.8,9.8,0.001
+Morton NP,Caustis flexuosa,G,13.1,27.4,0.002
+Morton NP,Cryptostylis subulata,H,14,1218.3,0.087
+Morton NP,Cyathochaeta diandra,F,2.6,1199,0.47
+Morton NP,Dampiera scottiana,S,6.9,19.5,0.003
+Morton NP,Dampiera stricta,S,7.6,35.4,0.005
+Morton NP,Entolasia stricta,G,13.2,96.2,0.007
+Morton NP,Epacris sp,S,11.3,7.5,0.001
+Morton NP,Eucalyptus gummifera,T,4.2,1235.9,0.292
+Morton NP,Eucalyptus sclerophylla,T,3.2,1450.6,0.448
+Morton NP,Eucalyptus sp,T,3.7,1520.9,0.407
+Morton NP,Gompholobium grandiflorum,S,5.2,41,0.008
+Morton NP,Goodenia bellidifolia,H,5,260.8,0.052
+Morton NP,Hakea dactyloides,S,3.6,748.9,0.21
+Morton NP,Haloragis aspera,S,7.2,26.8,0.004
+Morton NP,Hibbertia riparia,S,5.8,6,0.001
+Morton NP,Isopogon anemonifolius,S,3.9,383.9,0.098
+Morton NP,Lambertia formosa,S,3.7,147.7,0.04
+Morton NP,Leptospermum lanigerum,T,7.5,26.4,0.004
+Morton NP,Leptospermum rotundifolium,S,9.6,12.7,0.001
+Morton NP,Lomandra obliqua,G,8.1,9.5,0.001
+Morton NP,Lomandra sp,G,6,92.8,0.015
+Morton NP,Mirbelia speciosa,S,10.9,23.1,0.002
+Morton NP,Mitrasacme polymorpha,H,11.3,7.6,0.001
+Morton NP,Monotoca scoparia,S,7.9,28,0.004
+Morton NP,Patersonia sericea longifolia,,2.9,714,0.25
+Morton NP,Persoonia levis,S,5.2,2281.4,0.44
+Morton NP,Persoonia mollis,S,4.8,40.4,0.008
+Morton NP,Petrophile pedunculata,S,3.5,167.6,0.047
+Morton NP,Phyllota phylicoides,S,7.9,19.9,0.003
+Morton NP,Pimelea linifolia,S,10.4,20.1,0.002
+Morton NP,Pimelea sp,S,16.2,29.6,0.002
+Morton NP,Platysace ericoides,S,7,9.6,0.001
+Morton NP,Platysace linearifolia,S,10.4,10.6,0.001
+Morton NP,Poranthera ericifolia,S,10.3,6.8,0.001
+Morton NP,Pultenaea sp,,9.8,34.8,0.004
+Morton NP,Restio dimorphus,G,14.2,8.5,0.001
+Morton NP,Stylidium lineare,G,8.9,6.2,0.001
+Morton NP,Tricoryne simplex,H,17.8,286.9,0.016
+Morton NP,Xanthorrhoea sp,S,1.7,3793,2.294
+Morton NP,Xanthosia tridentata,T,13.8,15.9,0.001
+Rosewood,Acacia decora,S,4.8,144.4,0.03
+Rosewood,Acacia doratoxylon,T,3.5,456,0.131
+Rosewood,Amyema miquelii,EP,3.2,495.3,0.155
+Rosewood,Atriplex stipitata,S,7.1,22.1,0.003
+Rosewood,Boerhavia dominii,H,6.9,45.9,0.007
+Rosewood,Brunonia australis,H,8.1,41,0.005
+Rosewood,Callitris columellaris,T,2,24.8,0.012
+Rosewood,Calotis hispidula,H,11.6,25.9,0.002
+Rosewood,Chenopodium desertorum,S,7,20.2,0.003
+Rosewood,Chloris virgata,G,9.1,73.1,0.008
+Rosewood,Danthonia caespitosa,G,5.4,25.7,0.005
+Rosewood,Dianella sp,H,4.4,522.2,0.118
+Rosewood,Dodonaea viscosa cuneata,S,7.2,273.9,0.038
+Rosewood,Einadia nutans,S,12.1,17.2,0.001
+Rosewood,Eragrostis sp,G,5,16.3,0.003
+Rosewood,Eremophila glabra,S,3.9,76.6,0.02
+Rosewood,Eucalyptus dwyeri,T,3.8,1547,0.408
+Rosewood,Eucalyptus intertexta,T,4.7,1257.2,0.267
+Rosewood,Eucalyptus viridis,T,3.4,660.8,0.196
+Rosewood,Geijera parviflora,T,4.8,521.1,0.11
+Rosewood,Goodenia sp,H,8.9,85.1,0.01
+Rosewood,Jasminum lineare,V,6.8,92.9,0.014
+Rosewood,Maytenus cunninghamii,S,5.2,88.9,0.017
+Rosewood,Medicago sp,H,12.8,17.1,0.001
+Rosewood,Melinis repens,G,11.1,64.4,0.006
+Rosewood,Myoporum montanum,S,6.4,532.8,0.084
+Rosewood,Olearia ramulosa,S,4.6,7.2,0.002
+Rosewood,Oxalis corniculata,H,22.4,12.1,0.001
+Rosewood,Panicum sp,G,6.4,104.3,0.016
+Rosewood,Paspalidium constrictum,G,4.6,41.8,0.009
+Rosewood,Prostanthera striatiflora,S,3.3,25.1,0.008
+Rosewood,Sclerolaena diacantha,S,3.1,6.4,0.002
+Rosewood,Senna artemisioides artemisioides,S,2.6,13.4,0.005
+Rosewood,Sida corrugata,H,5.6,122.5,0.022
+Rosewood,Solanum sp,,8,1392.1,0.173
+Rosewood,Vittadinia cuneata,H,13.2,8.7,0.001
+Tundalya,Alyssum linifolium,H,12.8,29.7,0.002
+Tundalya,Atriplex holocarpa,S,13.7,266.4,0.02
+Tundalya,Atriplex leptocarpa,S,18.8,572.3,0.03
+Tundalya,Atriplex pseudocampanulata,S,15.2,114.3,0.008
+Tundalya,Brachyscome curvicarpa,,12.6,48.3,0.004
+Tundalya,Brassica tournefortii,H,10.6,308,0.029
+Tundalya,Bulbine semibarbata,,14.7,354,0.024
+Tundalya,Chenopodium sp,S,19.6,105.6,0.005
+Tundalya,Cynoglossum australe,H,11.7,522.2,0.045
+Tundalya,Einadia nutans,S,11.1,36.2,0.003
+Tundalya,Eragrostis setifolia,G,8.9,32.7,0.004
+Tundalya,Erodium cicutarium,H,36.4,47.4,0.001
+Tundalya,Eucalyptus microtheca,T,5.3,877.2,0.167
+Tundalya,Euphorbia drummondii,H,16.1,5.2,0
+Tundalya,Harmsiodoxa puberula,H,15.5,376.1,0.024
+Tundalya,Hordeum leporinum,G,18.2,156.9,0.009
+Tundalya,Ixiolaena leptolepis,H,20.6,135.1,0.007
+Tundalya,Lepidium sp,H,18.5,91.3,0.005
+Tundalya,Maireana sclerolaenoides,S,11.9,8.9,0.001
+Tundalya,Panicum sp,G,12.7,79.7,0.006
+Tundalya,Phlegmatospermum cochlearinum,H,17.5,61.3,0.004
+Tundalya,Portulaca oleracea,H,15.6,53,0.003
+Tundalya,Pycnosorus chrysanthus,H,20.8,49.8,0.002
+Tundalya,Rhodanthe microglossa,H,12.6,229.6,0.018
+Tundalya,Rhodanthe stricta,H,14,63.5,0.005
+Tundalya,Sclerolaena calcarata,S,8.6,9.2,0.001
+Tundalya,Sclerolaena intricata,S,9.4,29.8,0.003
+Tundalya,Sclerolaena muricata,S,9.5,22.9,0.002
+Tundalya,Senecio glossanthus,H,13.6,112.9,0.008
+Tundalya,Swainsona phacoides,S,18.5,69.2,0.004
+Tundalya,Tetragonia tetragonioides,H,16.3,561.9,0.034
+Tundalya,Threlkeldia proceriflora,,11.7,23.4,0.002
+Tundalya,Zygophyllum iodocarpum,H,10.6,87.1,0.008

@@ -1,0 +1,46 @@
+Species,site,LMA (mg mm-2),Leaf nitrogen (mg mg-1),leaf size (mm2),latitude (deg),longitude (deg),description
+Acacia celsa,Atherton,0.145,0.0214,2786,-17.117,145.65,Tropical rain forest vegetation
+Acronychia acidula,Atherton,0.085,0.0243,14302,-17.117,145.65,Tropical rain forest vegetation
+Alphitonia petriei,Atherton,0.149,0.0163,6820,-17.117,145.65,Tropical rain forest vegetation
+Glochidion hylandii,Atherton,0.106,0.0137,3209,-17.117,145.65,Tropical rain forest vegetation
+Homalanthus novo-guineensis,Atherton,0.082,0.022,10682,-17.117,145.65,Tropical rain forest vegetation
+Melicope elleryana,Atherton,0.075,0.0268,6955,-17.117,145.65,Tropical rain forest vegetation
+Neolitsea dealbata,Atherton,0.093,0.0164,5228,-17.117,145.65,Tropical rain forest vegetation
+Polyscias australiana,Atherton,0.079,0.0154,6806,-17.117,145.65,Tropical rain forest vegetation
+Psychotria sp. Utchee Creek (H.Flecker NQNC5313),Atherton,0.108,0.0179,11157,-17.117,145.65,Tropical rain forest vegetation
+Rhodomyrtus trineura,Atherton,0.129,0.0111,3401,-17.117,145.65,Tropical rain forest vegetation
+Syzygium graveolens,Cape Tribulation,0.151,0.0155,5246,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Aleurites rockinghamensis,Cape Tribulation,0.113,0.0184,73984,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Alstonia scholaris,Cape Tribulation,0.107,0.0223,6182,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Argyrodendron peralatum,Cape Tribulation,0.244,0.0119,3201,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Atractocarpus hirtus,Cape Tribulation,0.072,0.0157,11374,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Brombya platynema,Cape Tribulation,0.106,0.0188,8218,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Cardwellia sublimis,Cape Tribulation,0.127,0.0128,4352,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Castanospermum australe,Cape Tribulation,0.117,0.0237,2765,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Cleistanthus myrianthus,Cape Tribulation,0.078,0.0228,4828,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Cryptocarya laevigata,Cape Tribulation,0.087,0.0156,2682,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Cryptocarya mackinnoniana,Cape Tribulation,0.204,0.0152,10458,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Cryptocarya murrayi,Cape Tribulation,0.155,0.0167,9960,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Dendrocnide moroides,Cape Tribulation,0.052,0.0312,26454,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Elaeocarpus grandis,Cape Tribulation,0.122,0.0187,2762,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Endiandra leptodendron,Cape Tribulation,0.106,0.018,3987,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Endiandra microneura,Cape Tribulation,0.151,0.0177,3377,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Gillbeea adenopetala,Cape Tribulation,0.126,0.0096,3678,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Polyalthia xanthocarpa,Cape Tribulation,0.072,0.022,4685,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Harpullia rhyticarpa,Cape Tribulation,0.076,0.0174,40876,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Hernandia albiflora,Cape Tribulation,0.069,0.0195,3806,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Ixora biflora,Cape Tribulation,0.081,0.01,2760,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Lasianthus chlorocarpus,Cape Tribulation,0.055,0.0158,3313,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Litsea leefeana,Cape Tribulation,0.13,0.0144,3917,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Macaranga tanarius,Cape Tribulation,0.104,0.0205,46676,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Mallotus mollissimus,Cape Tribulation,0.063,0.0352,16716,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Medicosma sessiliflora,Cape Tribulation,0.106,0.0153,8164,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Melastoma cyanoides,Cape Tribulation,0.046,0.0208,4009,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Myristica insipida,Cape Tribulation,0.106,0.0185,8379,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Pittosporum rubiginosum,Cape Tribulation,0.065,0.0143,9931,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Psychotria dallachiana,Cape Tribulation,0.079,0.0177,2495,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Samadera baileyana,Cape Tribulation,0.086,0.023,9624,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Rockinghamia angustifolia,Cape Tribulation,0.108,0.0158,10636,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Syzygium gustavioides,Cape Tribulation,0.167,0.0129,3590,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Syzygium sayeri,Cape Tribulation,0.131,0.0137,2645,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest
+Trema tomentosa var. aspera,Cape Tribulation,0.053,0.0299,2071,-16.100,145.45,Complex mesophyll vine forest in tropical rain forest

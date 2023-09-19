@@ -1,0 +1,6 @@
+﻿location,long,lat,vegetation,elevation,MAP,soil P,soil N,parent material
+Coffs Harbour,152.972,-30.321,wet sclerophyll forest,195,2034,249,0.39,"Devonian - Siliceous argilite, slate, minor siliceous greywacke (Db)"
+Kuringai-Chase NP,151.284,-33.586,heathland,140,1231,95,0.15,"Triassic - Massive quartz sanstone, minor shale lenses (Rh)"
+Morton NP,150.336,-34.778,heathland,315,1821,42,0.04,"Permian - Lithic sandstone, feldspathic sandstone, sandy mudstone, shale, quartz sandstone, conglomerate, pebbly siltstone, latite flows (Ps)"
+Rosewood,146.28,-32.948,woodland,200,381,196,0.1,"Silurian - Feldspathic and lithic greywacke, siltstone, mudstone, argillaceous and quartzitic sandstone, basalt quartz pebble conglomerate (Slc)"
+Tundalya,144.834,-30.731,woodland,90,262,407,0.07,"Quaternary - Alluvial and riverine plain deposits of gravel, sand, silt and clay; claypans and outwash areas of black and red clayed silt and sand; coastal sand dunes and beach deposits (Qa)"
