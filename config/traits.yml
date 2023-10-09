@@ -388,7 +388,7 @@ traits:
           of the year, in response to drought.
         semi_deciduous: Plant thins, but does not entirely lose, its leaf canopy in
           response to an environmental cue, usually drought.
-      entity_URI: https://w3id.org/APD/traits/trait_0030024     
+      entity_URI: https://w3id.org/APD/traits/trait_0030024
     leaf_stomatal_density_abaxial:
       label: Stomatal density on the lower leaf surface
       description: A leaf stomatal complex frequency trait [TO:0000566] which is the

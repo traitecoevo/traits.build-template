@@ -132,14 +132,6 @@ traits:
   basis_of_value: expert_score
   replicates: .na.character
   methods: expert knowledge and reference books
-- var_in: Lam
-  unit_in: mm
-  trait_name: leaf_thickness
-  entity_type: individual
-  value_type: raw
-  basis_of_value: measurement
-  replicates: 1
-  methods: Measurements made using a micrometer
 - var_in: LMA
   unit_in: g/m2
   trait_name: leaf_mass_per_area

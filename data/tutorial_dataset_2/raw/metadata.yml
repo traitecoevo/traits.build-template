@@ -1,6 +1,6 @@
 source:
   primary:
-    key: Test_dataset_2
+    key: Tutorial_dataset_2
     bibtype: Article
     year: '2000'
     author: Carlos Roberto Fonseca and Jacob Mcc. Overton and Bronwyn Collins and
@@ -21,7 +21,17 @@ contributors:
   austraits_curators: unknown
 dataset:
   data_is_long_format: no
-  custom_R_code: .na
+  custom_R_code:   '
+    data %>%
+      mutate(
+        across(c("TRAIT Leaf Dry Mass UNITS g"), ~na_if(.x,0))
+      ) %>%
+      group_by(name_original) %>%
+        mutate(
+          across(c("TRAIT Growth Form CATEGORICAL EP epiphyte (mistletoe) F fern G grass H herb S shrub T tree V vine"), replace_duplicates_with_NA)
+        ) %>%
+      ungroup()
+  '
   collection_date: x/x
   taxon_name: name_original
   location_name: site_TEXT
@@ -137,6 +147,15 @@ traits:
     Delta-T SCAN image analysis software (Delta-T Devices, Cambridge, UK)
 substitutions:
 - trait_name: plant_growth_form
+  find: ep
+  replace: .na.character
+- trait_name: plant_growth_form
+  find: f
+  replace: fern
+- trait_name: plant_growth_form
+  find: g
+  replace: graminoid
+- trait_name: plant_growth_form
   find: h
   replace: herb
 - trait_name: plant_growth_form
@@ -146,17 +165,8 @@ substitutions:
   find: t
   replace: tree
 - trait_name: plant_growth_form
-  find: ep
-  replace: shrub
-- trait_name: plant_growth_form
-  find: g
-  replace: graminoid
-- trait_name: plant_growth_form
   find: v
   replace: climber_herbaceous
-- trait_name: plant_growth_form
-  find: f
-  replace: fern
 taxonomic_updates: .na
 exclude_observations: .na
 questions: .na
