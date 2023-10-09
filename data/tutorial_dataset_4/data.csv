@@ -1,0 +1,92 @@
+Species,Long,Lat,log_LA.SA,Sample,Height,References,source_id,basis_of_record,entity,value_type
+Ceratopetalum apetalum ,150.0333333,-35.58333333,2.787812396,trunk sample,,Barrett et al. 1996,Barrett_1996,field,population,mean
+Doryphora sassafras ,150.0333333,-35.58333333,2.76700389,trunk sample,,Barrett et al. 1996,Barrett_1996,field,population,mean
+Eucalyptus maculata ,150.0333333,-35.58333333,3.218963061,trunk sample,,Barrett et al. 1996,Barrett_1996,field,population,mean
+Eucalyptus camaldulensis ,149.0333333,-32.7,3.459670525,trunk sample,,Benyon et al. 1999,Benyon_1999,captive_cultivated,individual,raw
+Eucalyptus camaldulensis ,149.0333333,-32.7,3.568636236,trunk sample,,Benyon et al. 1999,Benyon_1999,captive_cultivated,individual,raw
+Eucalyptus camaldulensis ,149.0333333,-32.7,3.501689446,trunk sample,6.7,Benyon et al. 1999,Benyon_1999,captive_cultivated,individual,raw
+Eucalyptus camaldulensis ,149.0333333,-32.7,3.48148606,trunk sample,4.8,Benyon et al. 1999,Benyon_1999,captive_cultivated,individual,raw
+Eucalyptus occidentalis ,149.0333333,-32.7,3.505845406,trunk sample,,Benyon et al. 1999,Benyon_1999,captive_cultivated,individual,raw
+Eucalyptus occidentalis ,149.0333333,-32.7,3.48148606,trunk sample,6.9,Benyon et al. 1999,Benyon_1999,captive_cultivated,individual,raw
+Eucalyptus marginata ,116.0166667,-32.65,3.42945706,branch sample,,Bleby et al.2009,Bleby_2009,field captive_cultivated,individual,raw
+Eucalyptus marginata ,116.0166667,-32.65,3.581698709,branch sample,,Bleby et al.2009,Bleby_2009,field captive_cultivated,individual,raw
+Eucalyptus marginata ,116.0166667,-32.65,3.57024772,branch sample,,Bleby et al.2009,Bleby_2009,field captive_cultivated,individual,raw
+Eucalyptus coccifera ,146.5833333,-42.68333333,3.542118103,branch sample,,Brodribb and Felid 2000,Brodribb_2000,field,population,mean
+Atherosperma moschatum ,146.5833333,-42.68333333,3.459670525,branch sample,,Brodribb and Felid 2000,Brodribb_2000,field,population,mean
+Diselma archeri ,146.5833333,-42.68333333,2.860120914,branch sample,,Brodribb and Felid 2000,Brodribb_2000,field,population,mean
+Leptospermum rupestre ,146.5833333,-42.68333333,3.017728767,branch sample,,Brodribb and Felid 2000,Brodribb_2000,field,population,mean
+Nothofagus cunninghamii ,146.5833333,-42.68333333,3.123205024,branch sample,,Brodribb and Felid 2000,Brodribb_2000,field,population,mean
+Phyllocladus aspleniifolius ,146.5833333,-42.68333333,3.524328812,branch sample,,Brodribb and Felid 2000,Brodribb_2000,field,population,mean
+Podocarpus lawrencei,146.5833333,-42.68333333,3.032920266,branch sample,,Brodribb and Felid 2000,Brodribb_2000,field,population,mean
+Richea scoparium ,146.5833333,-42.68333333,2.677780705,branch sample,,Brodribb and Felid 2000,Brodribb_2000,field,population,mean
+Tasmannia lanceolata ,146.5833333,-42.68333333,3.173925197,branch sample,,Brodribb and Felid 2000,Brodribb_2000,field,population,mean
+Eucalyptus kochii,116.2166667,-30.04111111,3.511449283,trunk sample,,Brooksbank et al. 2011 ,Brooksbank_2011 ,captive_cultivated,individual,raw
+Eucalyptus kochii,116.2166667,-30.04111111,3.493494968,trunk sample,,Brooksbank et al. 2011 ,Brooksbank_2011 ,captive_cultivated,individual,raw
+Eucalyptus kochii,116.2166667,-30.04111111,3.496209317,trunk sample,,Brooksbank et al. 2011 ,Brooksbank_2011 ,captive_cultivated,individual,raw
+Eucalyptus kochii,116.2166667,-30.04111111,3.391473966,trunk sample,,Brooksbank et al. 2011 ,Brooksbank_2011 ,captive_cultivated,individual,raw
+Eucalyptus kochii,116.2166667,-30.04111111,3.392544977,trunk sample,,Brooksbank et al. 2011 ,Brooksbank_2011 ,captive_cultivated,individual,raw
+Eucalyptus kochii,116.2166667,-30.04111111,3.393618635,trunk sample,,Brooksbank et al. 2011 ,Brooksbank_2011 ,captive_cultivated,individual,raw
+Eucalyptus kochii,116.2166667,-30.04111111,3.343901798,trunk sample,,Brooksbank et al. 2011 ,Brooksbank_2011 ,captive_cultivated,individual,raw
+Eucalyptus kochii,116.2166667,-30.04111111,3.341988603,trunk sample,,Brooksbank et al. 2011 ,Brooksbank_2011 ,captive_cultivated,individual,raw
+Eucalyptus kochii,116.2166667,-30.04111111,3.345823458,trunk sample,,Brooksbank et al. 2011 ,Brooksbank_2011 ,captive_cultivated,individual,raw
+Banksia attenuata  ,115.95,-31.75,3.045757491,branch sample,,Canham et al. 2009,Canham_2009,field,individual,raw
+Banksia attenuata  ,115.95,-31.75,3.15490196,branch sample,,Canham et al. 2009,Canham_2009,field,individual,raw
+Banksia ilicifolia ,115.95,-31.75,3.096910013,branch sample,,Canham et al. 2009,Canham_2009,field,individual,raw
+Banksia ilicifolia ,115.95,-31.75,3.22184875,branch sample,,Canham et al. 2009,Canham_2009,field,individual,raw
+Banksia littoralis  ,115.95,-31.75,3.522878745,branch sample,,Canham et al. 2009,Canham_2009,field,individual,raw
+Banksia menziesii ,115.95,-31.75,3.15490196,branch sample,,Canham et al. 2009,Canham_2009,field,individual,raw
+Banksia menziesii ,115.95,-31.75,3.096910013,branch sample,,Canham et al. 2009,Canham_2009,field,individual,raw
+Eucalyptus kochii ,116.2116667,-30.03833333,3.468521083,trunk sample,,Carter and White 2009,Carter_2009,captive_cultivated,individual,raw
+Eucalyptus kochii ,116.2116667,-30.03833333,3.366531544,trunk sample,,Carter and White 2009,Carter_2009,captive_cultivated,individual,raw
+Eucalyptus miniata ,131.15,-12.48527778,3.647817482,branch sample,,Cernusak et al. 2006,Cernusak_2006,field,population,mean
+Eucalyptus tetrodonta ,131.15,-12.48527778,3.754487332,branch sample,,Cernusak et al. 2006,Cernusak_2006,field,population,mean
+Alphitonia excelsa ,145.75,-19.18333333,3.665546249,branch sample,,Choat et al. 2005,Choat_2005,field,population,mean
+Austromyrtus bidwillii,145.75,-19.18333333,3.804100348,branch sample,,Choat et al. 2005,Choat_2005,field,population,mean
+Brachychiton australis,145.75,-19.18333333,3.496209317,branch sample,,Choat et al. 2005,Choat_2005,field,population,mean
+Cochlospermum gillivraei ,145.75,-19.18333333,3.244887734,branch sample,,Choat et al. 2005,Choat_2005,field,population,mean
+Argyrodendron trifoliolatum ,145.5361111,-17.375,3.455931956,branch sample,,Drake and Franks 2003,Drake_2003,field,individual,raw
+Argyrodendron trifoliolatum ,145.5361111,-17.375,3.301029996,branch sample,,Drake and Franks 2003,Drake_2003,field,individual,raw
+Calamus australis ,145.5361111,-17.375,4,branch sample,,Drake and Franks 2003,Drake_2003,field,individual,raw
+Calamus australis ,145.5361111,-17.375,3.823908741,branch sample,,Drake and Franks 2003,Drake_2003,field,individual,raw
+Calamus caryotoides ,145.5361111,-17.375,3.638272164,branch sample,,Drake and Franks 2003,Drake_2003,field,individual,raw
+Calamus caryotoides ,145.5361111,-17.375,3.356547324,branch sample,,Drake and Franks 2003,Drake_2003,field,individual,raw
+Castanospora alphandii ,145.5361111,-17.375,3.886056648,branch sample,,Drake and Franks 2003,Drake_2003,field,individual,raw
+Castanospora alphandii ,145.5361111,-17.375,3.698970004,branch sample,,Drake and Franks 2003,Drake_2003,field,individual,raw
+Doryphora aromatica ,145.5361111,-17.375,3.853871964,branch sample,,Drake and Franks 2003,Drake_2003,field,individual,raw
+Doryphora aromatica ,145.5361111,-17.375,3.455931956,branch sample,,Drake and Franks 2003,Drake_2003,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.844663963,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.882728704,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.910094889,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.869666232,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.716698771,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.818156412,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.71219827,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.744727495,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.850780887,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.73754891,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.91721463,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.709965389,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.920818754,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.68613278,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.844663963,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.899629455,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.869666232,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.772113295,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.954677021,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.756961951,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.91721463,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+Eucalyptus gomphocelia,116.15,-32.15,3.732828272,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 1,116.15,-32.15,3.896196279,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 1,116.15,-32.15,3.847711656,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 1,116.15,-32.15,3.694648631,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 1,116.15,-32.15,3.718966633,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 1,116.15,-32.15,3.504455662,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 1,116.15,-32.15,3.838631998,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 1,116.15,-32.15,3.860120914,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 2,116.15,-32.15,3.826813732,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 2,116.15,-32.15,3.512861625,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 2,116.15,-32.15,3.974694135,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 2,116.15,-32.15,3.772113295,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 2,116.15,-32.15,3.850780887,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 2,116.15,-32.15,3.844663963,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
+unk sp. 2,116.15,-32.15,3.821023053,branch sample,,Drake et al. 2011,Drake_2011,field,individual,raw
