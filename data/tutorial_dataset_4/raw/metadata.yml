@@ -1,0 +1,64 @@
+source:
+  primary:
+    key: tutorial_dataset_4
+    bibtype: Article
+    year: unknown
+    author: unknown
+    title: unknown
+    journal: unknown
+    volume: unknown
+    number: unknown
+    pages: unknown
+    doi: unknown
+contributors:
+  data_collectors:
+  - last_name: unknown
+    given_name: unknown
+    ORCID: unknown
+    affiliation: unknown
+  assistants: unknown
+  dataset_curators: unknown
+dataset:
+  data_is_long_format: no
+  custom_R_code:       '
+    data %>% 
+      mutate(
+        location_name = paste0("lat_",Lat,"_long_",Long),
+        LA.SA = 10^(log_LA.SA)
+      )
+'
+  collection_date: x
+  taxon_name: Species
+  location_name: location_name
+  description: unknown
+  basis_of_record: unknown
+  life_stage: unknown
+  sampling_strategy: unknown
+  original_file: unknown
+  notes: unknown
+locations: .na
+contexts:
+- context_property: unknown
+  category: method
+  var_in: Sample
+  values:
+  - value: trunk sample
+    description: unknown
+  - value: branch sample
+    description: unknown
+- context_property: unknown
+  category: entity_context
+  var_in: Height
+traits:
+- var_in: LA.SA
+  unit_in: unknown
+  trait_name: unknown
+  entity_type: unknown
+  value_type: unknown
+  basis_of_value: unknown
+  replicates: unknown
+  methods: unknown
+substitutions: .na
+taxonomic_updates: .na
+exclude_observations: .na
+questions: .na
