@@ -1,0 +1,37 @@
+Tutorial_dataset_6
+(derived from raw data submitted for Cernusak_2011 in AusTraits)
+
+reference doi: 10.1016/j.agrformet.2011.01.006
+data_collector: Lucas Cernusak, College of Science and Engineering, James Cook University, Cairns,
+      QLD, Australia
+collection_date: Date
+description: Leaf-level photosynthetic parameters of species in the closely related
+    genera Eucalyptus and Corymbia were assessed along a strong rainfall gradient
+    in northern Australia.
+basis_of_record: field
+life_stage: adult
+sampling_strategy: Leaf gas exchange measurements were made at six sites along a
+    sub-continental rainfall gradient in northern Australia (Fig. 1). The sites covered
+    a latitudinal range from approximately 12 deg S to 23 deg S, with corresponding
+    MAP ranging from approximately 1700 mm to 300 mm (Table 1). Two canopy tree species
+    characteristic of each site were selected for measurements. All of the selected
+    species were from the genus Eucalyptus, or the closely related genus Corymbia
+    (Table 1). Two individuals of each of the two species at each site were selected
+    for measurements. A total of six leaves were sampled from each species at each
+    site. Canopy access was achieved with a 16 m elevated work platform at the four
+    more northerly sites, and with ladders or from the ground at the two more southerly
+    sites where trees were shorter.
+
+traits:
+  methods for all traits: Two portable photosynthesis systems
+    (Li-6400, LiCor Inc., Lincoln, NE, USA) were used to measure the response of photosynthesis
+    to intercellular CO2 concentration (A-ci curve).
+    The two systems were cross calibrated, and gave unbiased results with respect
+    to each other. The measurement sequence for each sampled leaf started with the
+    A-ci curve and then proceeded to the light response curve. The CO2 concentration
+    (umol mol-1) entering the leaf gas exchange cuvette was altered in the following
+    sequence, 400, 280, 230, 150, 70, 40, 230, 400, 640, 980, and 1200. A measurement
+    of photosynthesis was logged approximately 2 min after each step change in CO2
+    concentration entering the cuvette. Irradiance during the A-ci curve measurements
+    was set at 2000 umol photosynthetically active radiation (PAR) m-2 s-1, supplied
+    by an artificial light source (6400-02B LED, LiCor Inc.).

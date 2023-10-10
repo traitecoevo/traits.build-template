@@ -1,0 +1,23 @@
+Tutorial_dataset_7
+(derived from raw data submitted for AMRS_1981 in AusTraits)
+
+reference:
+  primary:
+    key: ABRS_1981
+    bibtype: Online
+    year: 1981
+    author: '{Australian Biological Resources Study}'
+    title: Flora of Australia, Australian Biological Resources Study, Canberra.
+    publisher: Department of Climate Change, Energy, the Environment and Water, Canberra.
+
+
+data_collector: Rachael Gallagher, Hawkesbury Institute for the Environment, Western Sydney University,
+      Australia
+collection_date: unknown/2015      
+description: Flora of Australian online checked via trait corrections
+basis_of_record: preserved_specimen
+  life_stage: adult
+  sampling_strategy: herbarium specimens
+
+traits:
+  methods for all traits: unknown

@@ -42,6 +42,45 @@ traits:
       allowed_values_min: 0.01
       allowed_values_max: 50.0
       entity_URI: https://w3id.org/APD/traits/trait_0020242
+    leaf_stomatal_conductance_per_area_at_Asat:
+      label: Leaf stomatal conductance to water vapour per unit leaf area during Asat
+        measurement (gsw)
+      description: The stomatal conductance [EnvThes:21211] to water vapour of plant
+        leaves [PO:0025034] whose photosystem [GO:0009521] I and II reaction centers
+        [GO:0009538; GO:0009539] are exposed to saturating [NCIT:C61427] photosynthetically
+        active radiation [ENVO:01001864] and ambient atmospheric carbon dioxide [ENVO:01000451]
+        concentrations [PATO:0000033], recorded per unit leaf area [PATO:0001323].
+        Stomatal conductance is the rate [PATO:0000161] of gaseous [MESH:D005740]
+        water [CHEBI:15377] diffusion [NCIT:C82333] through stomata [PO:0008032].;The
+        rate of gaseous water diffusion through stomata in a leaf exposed to saturating
+        light (photosynthetically active radiation) levels and ambient carbon dioxide
+        concentrations, recorded per unit leaf area.
+      comments: Stomatal conductance refers to both the rate of water vapour diffusion
+        exiting the leaf and carbon dioxide diffusion entering the leaf, but is reported
+        here as the rate of water exiting the leaf.
+      type: numeric
+      units: mmol{H2O}/m2/s
+      allowed_values_min: 0.1
+      allowed_values_max: 2000.0
+      entity_URI: https://w3id.org/APD/traits/trait_0020612
+    leaf_intercellular_CO2_concentration_at_Asat:
+      label: Internal CO2 concentration during Asat measurement (ci)
+      description: The intercellular space [PO:0025379] carbon dioxide [CHEBI:16526]
+        concentration [PATO:0000033] of plant leaves [PO:0025034] whose photosystem
+        [GO:0009521] I and II reaction centers [GO:0009538; GO:0009539] are exposed
+        to saturating [NCIT:C61427] photosynthetically active radiation [ENVO:01001864]
+        and ambient atmospheric carbon dioxide [ENVO:01000451] concentrations.;The
+        CO2 concentration in intercellular (interstitial) spaces in a leaf exposed
+        to saturating light (photosynthetically active radiation) levels and ambient
+        carbon dioxide concentrations; ci.
+      comments: Leaf temperature and leaf-to-air vapour pressure deficit should be
+        recorded as context properties. If Tleaf and VPD are not reported, it is assumed
+        measurements are made at typical temperature and VPD conditions for the plant.
+      type: numeric
+      units: umol{CO2}/mol
+      allowed_values_min: 10.0
+      allowed_values_max: 1300.0
+      entity_URI: https://w3id.org/APD/traits/trait_0020311
     water_potential_predawn:
       label: Pre-dawn water potential
       description: The shoot system [PO:0009006] water potential [EnvThes:22311] just
@@ -200,6 +239,38 @@ traits:
       allowed_values_min: 1.0e-05
       allowed_values_max: 1000000.0
       entity_URI: https://w3id.org/APD/traits/trait_0012610
+    seed_length:
+      label: Seed length
+      description: A seed morphology trait [TO:0000184] which is the greatest linear
+        dimension [PATO:0001708] (axis) of a seed [PO:0009010] and is perpendicular
+        to [PATO:0002434] the seed width [PATO:0000921] and seed height [PATO:0000119]
+        axes [NCIT:C25154].;Longest linear seed dimension.
+      comments: Observations of this trait in AusTraits are almost certainly an undocumented
+        mix of dimensions of true seeds and diaspores. When all or part of the fruit
+        is not easily separated from the true seed, many researchers will have recorded
+        and submitted a diaspore length, but labeled the data 'seed length'. The intent
+        of this measurement is that it excludes appendages, although it is likely
+        some submitted measurements include small appendages that are not easily separated
+        from the seed.
+      type: numeric
+      units: mm
+      allowed_values_min: 0.01
+      allowed_values_max: 1000.0
+      entity_URI: https://w3id.org/APD/traits/trait_0012613
+    leaf_compoundness:
+      label: Leaf compoundness
+      description: A leaf shape trait [TO:0000492] which is whether a leaf [PO:0025034]
+        is a simple leaf [PO:0020042] or is divided into leaflets [PO:0020049] making
+        it a compound leaf [PO:0020043].;A binary trait that indicates whether a leaf
+        lamina is simple or divided into discontinuous leaflets (compound).
+      comments: See also the trait â€˜leaf_division' for more detailed leaf compoundness
+        trait values. Note that there might be some species that grade from deeply
+        lobed simple leaves (see trait `leaf_lobation`)  to compound leaves.
+      type: categorical
+      allowed_values_levels:
+        compound: A leaf that is divided into multiple leaflets. [PO:0020043]
+        simple: A leaf with a single undivided blade. [PO:0020042]
+      entity_URI: https://w3id.org/APD/traits/trait_0011316
     leaf_type:
       label: Leaf type
       description: A leaf shape trait [TO:0000492] which is inclusive [NCIT:C166400]

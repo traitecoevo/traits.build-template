@@ -1,0 +1,72 @@
+source:
+  primary:
+    key: tutorial_dataset_7
+    bibtype: Online
+    year: 1981
+    author: '{Australian Biological Resources Study}'
+    title: Flora of Australia, Australian Biological Resources Study, Canberra.
+    publisher: Department of Climate Change, Energy, the Environment and Water, Canberra.
+    url: http://www.ausflora.org.au
+contributors:
+  data_collectors:
+  - last_name: Gallagher
+    given_name: Rachael
+    ORCID: 0000-0002-4680-8115
+    affiliation: Hawkesbury Institute for the Environment, Western Sydney University,
+      Australia
+  dataset_curators: Rachael Gallagher
+dataset:
+  data_is_long_format: yes
+  custom_R_code: .na
+  collection_date: unknown/2015
+  taxon_name: species_name
+  trait_name: trait
+  value: value
+  description: Flora of Australian online checked via trait corrections
+  basis_of_record: preserved_specimen
+  life_stage: adult
+  sampling_strategy: herbarium specimens
+  original_file: none
+  notes: none
+locations: .na
+contexts: .na
+traits:
+- var_in: leaf length maximum
+  unit_in: units
+  trait_name: leaf_length
+  entity_type: species
+  value_type: maximum
+  basis_of_value: measurement
+  replicates: .na
+  methods: unknown
+- var_in: leaf type
+  unit_in: .na
+  trait_name: leaf_compoundness
+  entity_type: species
+  value_type: mode
+  basis_of_value: expert_score
+  replicates: .na
+  methods: unknown
+- var_in: seed length maximum
+  unit_in: units
+  trait_name: seed_length
+  entity_type: species
+  value_type: maximum
+  basis_of_value: measurement
+  replicates: .na
+  methods: unknown
+- var_in: seed length minimum
+  unit_in: units
+  trait_name: seed_length
+  entity_type: species
+  value_type: minimum
+  basis_of_value: measurement
+  replicates: .na
+  methods: unknown
+substitutions:
+- trait_name: leaf_compoundness
+  find: articles
+  replace: simple
+taxonomic_updates: .na
+exclude_observations: .na
+questions: .na
