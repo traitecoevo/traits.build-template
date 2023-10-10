@@ -24,7 +24,7 @@ contributors:
     ORCID: 0000-0002-7575-5526
     affiliation: College of Science and Engineering, James Cook University, Cairns,
       QLD, Australia
-  austraits_curators: Elizabeth Wenk
+  dataset_curators: Elizabeth Wenk
 dataset:
   data_is_long_format: no
   custom_R_code:      '
@@ -91,7 +91,7 @@ dataset:
     accessible arc that includes replicated individuals of species found under natural
     conditions.
   original_file: Aus_Trait_Submission.xls contributed by Alex Cheesman
-  notes: none
+  notes: derived from Cheesman_2020 in AusTraits
 locations:
   Crane:
     latitude (deg): -16.117

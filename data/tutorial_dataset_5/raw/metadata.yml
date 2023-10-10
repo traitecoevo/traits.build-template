@@ -26,7 +26,8 @@ dataset:
     data %>% 
       mutate(
         measurement_remarks = paste0("maternal lineage ", Mother),
-        location = "Australian National University glasshouse"
+        location = "Australian National University glasshouse",
+        across(c("area_mm2"), ~na_if(.x,0))
       )
   '
   collection_date: date
