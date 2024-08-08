@@ -27,8 +27,8 @@ description: We combined new field measurements of LA:SA ratios with published v
 basis_of_record: basis_of_record
 life_stage: adult
 sampling_strategy: We measured LA and SA on four branches per tree of ten evergreen
-    angiosperm species at Robson Creek, Danbulla National Park, Queensland (17°070S,
-    145°370E). Data for a further 170 species were contributed from 25 sites, based
+    angiosperm species at Robson Creek, Danbulla National Park, Queensland (17deg070S,
+    145deg370E). Data for a further 170 species were contributed from 25 sites, based
     on seven published and two unpublished studies. We also compiled 258 published
     measurements on 151 species from 43 sites. The data comprised measurements from
     183 species, at the locations shown in Fig. 1. The full dataset was composed of
