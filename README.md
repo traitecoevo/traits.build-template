@@ -14,7 +14,7 @@ just a repository that follows a fixed folder layout; this template is a minimal
 that layout.
 
 For a full, worked walk-through that uses this very template, see the
-[compilation tutorial in the traits.build book](https://traitecoevo.github.io/traits.build-book/tutorial_compilation.html).
+[compilation tutorial in the traits.build book](https://traitecoevo.github.io/traits.build-book/content/tutorial_compilation.html).
 
 ## Repository structure
 
