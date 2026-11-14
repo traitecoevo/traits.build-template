@@ -1,6 +1,6 @@
 source:
-  primary:
-    key: Farrell_2013
+  dataset:
+    key: tutorial_dataset_3
     bibtype: Article
     year: '2013'
     author: Claire Farrell and Christopher Szota and Nicholas S. G. Williams and Stefan

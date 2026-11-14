@@ -1,6 +1,6 @@
 source:
-  primary:
-    key: Falster_2005
+  dataset:
+    key: tutorial_dataset_1
     bibtype: Article
     year: '2005'
     author: Daniel S. Falster and Mark Westoby

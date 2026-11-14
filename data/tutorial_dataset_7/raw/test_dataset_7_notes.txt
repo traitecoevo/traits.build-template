@@ -2,8 +2,8 @@ Tutorial_dataset_7
 (derived from raw data submitted for AMRS_1981 in AusTraits)
 
 reference:
-  primary:
-    key: ABRS_1981
+  dataset:
+    key: tutorial_dataset_7
     bibtype: Online
     year: 1981
     author: '{Australian Biological Resources Study}'

@@ -1,5 +1,5 @@
 source:
-  primary:
+  dataset:
     key: tutorial_dataset_4
     bibtype: Article
     year: unknown
