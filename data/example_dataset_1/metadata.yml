@@ -1,6 +1,6 @@
 source:
-  primary:
-    key: Crisp_2017
+  dataset:
+    key: example_dataset_1
     bibtype: Article
     author: Michael D. Crisp, Lindy Cayzer, Gregory T. Chandler, Lyn G. Cook
     year: 2017

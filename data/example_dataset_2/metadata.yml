@@ -1,6 +1,6 @@
 source:
-  primary:
-    key: Cheesman_2020
+  dataset:
+    key: example_dataset_2
     bibtype: Article
     year: 2020
     author: Alexander W. Cheesman, Heather Duff, Kathryn Hill, Lucas A. Cernusak,

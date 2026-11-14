@@ -1,6 +1,6 @@
 source:
-  primary:
-    key: Tutorial_dataset_5
+  dataset:
+    key: tutorial_dataset_5
     bibtype: Article
     year: '2017'
     author: Sonya R. Geange and Veronica F. Briceno and Nicola C. Aitken and Jose
